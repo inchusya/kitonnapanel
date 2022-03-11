@@ -16,21 +16,71 @@
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
-  border-width: 1px;
-  border-color: #FFFFFF;
-  background-color: #FF2FF1;
-  height: 70px;}
+  background: #C4C4C4;
+  background-color: #ffffff;
+  border-width: 10vw;
+  border-color: #ffffff;
+  width: 288vw;
+  height: 1152vw;}
 
-.phone { grid-area: phone; }
+.phone { grid-area: phone;
+  background: #C4C4C4;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+width: 288vw;
+height: 288vw;}
 
-.map { grid-area: map; }
+.map { grid-area: map;
+  background: #C4C4C4;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+width: 576vw;
+height: 288vw;}
 
-.course { grid-area: course; }
+.course { grid-area: course;
+  background: #C4C4C4;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+width: 288vw;
+height: 288vw;}
 
-.screen { grid-area: screen; }
+.screen { grid-area: screen;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+width: 864vw;
+height: 576vh;}
 
-.speed { grid-area: speed; }
+.speed { grid-area: speed;
+  background: #C4C4C4;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
+ width: 288vw;
+height: 288vw;}
 
-.compas { grid-area: compas; }
+.compas { grid-area: compas;
+  background: #C4C4C4;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 4;
+width: 288vw;
+height: 288vw;}
 
-.buttons { grid-area: buttons; }
+.buttons { grid-area: buttons;
+  background: #C4C4C4;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+width: 864vw;
+height: 288vw;}
