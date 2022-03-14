@@ -1,2 +1,11 @@
-body{ background: #001EFF ;
+@import "reset.css";
+@import "content.css";
+@import "responsive.css";
+
+
+@font-face {
+font-family: "ProximaNova";
+src: url("../font/ProximaNova-Regular.ttf") format("truetype");
+font-style: normal;
+font-weight: normal;
 }
