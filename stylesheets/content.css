@@ -7,6 +7,13 @@ p{
     font-size: 19px;
     text-transform: uppercase;
   }
+  .phonetext{
+    font-family: ProximaNova;
+    color:#ffffff;
+    font-size: 45px;
+    padding-left: 34%;
+    padding-top: 10%;
+  }
 
 .kitonnapanel {
   display: grid;
@@ -27,7 +34,52 @@ p{
 border: 1px solid #ffffff;
 }
 
-.phone { grid-area: phone;
+.phone {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 5% 5%;
+  grid-template-areas:
+    "1 2 3"
+    "4 5 6"
+    "7 8 9"
+    "# 0 *";
+  grid-area: phone;
+}
+.one {
+  border: 1px solid #ffffff;
+}
+.two {
+  border: 1px solid #ffffff;
+}
+.three {
+  border: 1px solid #ffffff;
+}
+.four {
+  border: 1px solid #ffffff;
+}
+.five {
+  border: 1px solid #ffffff;
+}
+.six {
+  border: 1px solid #ffffff;
+}
+.seven {
+  border: 1px solid #ffffff;
+}
+.eight {
+  border: 1px solid #ffffff;
+}
+.nine {
+  border: 1px solid #ffffff;
+}
+.net {
+  border: 1px solid #ffffff;
+}
+.zero {
+  border: 1px solid #ffffff;
+}
+.star {
   border: 1px solid #ffffff;
 }
 
