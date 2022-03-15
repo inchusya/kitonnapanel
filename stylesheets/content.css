@@ -97,6 +97,10 @@ border: 1px solid #ffffff;
 .screen { grid-area: screen;
   border: 1px solid #ffffff;
 }
+.screenimg{
+  margin-left: 19%;
+  margin-top: 1%;
+}
 
 .speed { grid-area: speed;
 
