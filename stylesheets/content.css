@@ -94,12 +94,19 @@ border: 1px solid #ffffff;
   border: 1px solid #ffffff;
 }
 
+
 .screen { grid-area: screen;
   border: 1px solid #ffffff;
+}
+.ifs21{
+  margin-left: 16%;
+  margin-top: 2%;
 }
 .screenimg{
   margin-left: 19%;
   margin-top: 1%;
+  /* position: absolute;
+  z-index: 1 */
 }
 
 .speed { grid-area: speed;
@@ -121,5 +128,16 @@ border: 1px solid #ffffff;
 }
 
 .buttons { grid-area: buttons;
+  border: 1px solid #ffffff;
+
+}
+.circle1img{
+    margin: 1%;
+}
+.square{
+  width: 43px;
+  height: 43px;
+  display: inline-block;
+  margin: 1%;
   border: 1px solid #ffffff;
 }
