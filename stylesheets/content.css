@@ -20,18 +20,21 @@ p{
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
-  gap: 1.1% 1%;
+  gap: 2.7% 1.4%;
   grid-auto-flow: row;
   grid-template-areas:
     "weather phone map map course"
     "weather screen screen screen course"
     "weather screen screen screen speed"
     "weather buttons buttons buttons compas";
-    width: 100%;
+    width: 98vw;
+    height: 98vh;
+    margin: 2vh 2vh 2vh 2vh
 }
 
 .weather { grid-area: weather;
 border: 1px solid #ffffff;
+height: 100%;
 }
 
 .phone {
@@ -85,6 +88,11 @@ border: 1px solid #ffffff;
 
 .map { grid-area: map;
   border: 1px solid #ffffff;
+  height: 18.3vw;
+  background-image: url(../img/map.svg);
+  background-repeat: no-repeat;
+  background-size: 137%;
+  background-position: center;
 }
 .mapimg{
   /* width: 100%; */
@@ -92,22 +100,33 @@ border: 1px solid #ffffff;
 
 .course { grid-area: course;
   border: 1px solid #ffffff;
+  height: 36.6vw;
 }
-
+.courseimg{
+  position: absolute;
+  margin-left:3%;
+  margin-top: 7%;
+}
+.GSNASA11{
+  position: absolute;
+  margin-left:3%;
+  margin-top: 1%;
+}
+.p125{
+  margin-left:3%;
+  margin-top: 2%;
+  position: absolute;
+}
 
 .screen { grid-area: screen;
   border: 1px solid #ffffff;
+  height: 36.6vw;
 }
 .ifs21{
   margin-left: 16%;
   margin-top: 2%;
 }
-.screenimg{
-  margin-left: 19%;
-  margin-top: 1%;
-  /* position: absolute;
-  z-index: 1 */
-}
+.screenimg{}
 
 .speed { grid-area: speed;
 
@@ -126,18 +145,82 @@ border: 1px solid #ffffff;
   margin-left: 7.6%;
   margin-top: 4%;
 }
-
+.longbarimg{
+  position: absolute;
+  left: 10vw;
+  width: 45%;
+  top: 3.5vw;
+}
+.spin1img{
+  position: absolute;
+  width: 12%;
+  left: 1vw;
+}
+.spin2img{
+  position: absolute;
+  width: 12%;
+  top: 12vw;
+  left: 1vw;
+}
 .buttons { grid-area: buttons;
   border: 1px solid #ffffff;
+  height: 20vw;
+  position: relative;
+}
+.circlemain{
+  position: absolute;
+  left: 9.5vw;
+  top: 9.5vw;
 
 }
+.circlebuttons{
+  width: 30vw;
+  height: 3vw;
+  margin-top: 1%;
+}
+
 .circle1img{
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    display: inline-block;
     margin: 1%;
+}
+
+.circle1img:hover {
+  background-color: white;
+}
+.squarebuttons{
+  position: relative;
+  left: 23vw;
+  top: 6vw;
 }
 .square{
   width: 43px;
   height: 43px;
   display: inline-block;
-  margin: 1%;
+  margin: 2.5% 1% 1% 1%;
   border: 1px solid #ffffff;
+}
+.bar{
+  width: 18px;
+  height: 219px;
+  display: inline-block;
+  margin: 0.4%;
+  border: 1px solid #ffffff;
+}
+.verticalbar{
+  position: relative;
+  left: 38vw;
+  top: -10.5vw;
+}
+.inbar{
+  height: 8px;
+  background-color: white;
+}
+.lever{
+  position: absolute;
+  left: 38vw;
+  top: 20vw;
 }
