@@ -54,6 +54,12 @@ height: 100%;
 }
 
 
+
+
+
+
+
+
 .map { grid-area: map;
   border: 1px solid #ffffff;
   height: 18.3vw;
@@ -180,8 +186,8 @@ height: 100%;
   background-image: url(../img/triangle.svg);
   background-repeat: no-repeat;
   background-position: center;
-  width: 10vw;
-  height: 10vw;
+  width: 4vw;
+  height: 4vw;
   position: absolute;
   top: 45vw;
   left: 45vw;
@@ -308,6 +314,12 @@ height: 100%;
   left: 3vw;
 }
 
+.gospin{
+   transform: rotate(30deg);
+   -webkit-transform: rotate(30deg);
+   -ms-transform: rotate(30deg);
+ }
+
 .spin1img{
   position: absolute;
   width: 12%;
@@ -346,9 +358,24 @@ height: 100%;
     margin: 1%;
 }
 
-.circle1img:hover {
-  background-color: white;
+
+.triangle:hover, .inbar:hover, .circle1img:hover, .square:hover {
+   transform: scale(1.2);}
+
+.dropbar2:hover, .dropbar3:hover {
+  transform: scale(1.6);
 }
+
+ .circle1img:hover, .square:hover {
+      background-color: #7591FF;
+      border-color: #7591FF;}
+
+  .inbar:hover, .inlever:hover {
+       background-color: #FF5B01;
+       }
+
+
+
 .squarebuttons{
   position: relative;
   left: 23vw;
