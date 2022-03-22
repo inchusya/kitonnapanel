@@ -12,11 +12,7 @@ $( function() {
   } );
 
 
-//     $(function(){
-//   $(".dropbar2, .dropbar3").click(function(){
-//     $(this).toggleClass("gospin");
-//   });
-// });
+
 
 var num1 = 0;
 
@@ -42,6 +38,19 @@ $(this).css("-ms-transform", str);
 
 });
 });
+
+let xPrev = 0;
+    jQuery(document).ready(function(){
+
+       $(document).mousemove(function(e){
+           xPrev<e.pageX ? $(".vor2 wrn2").html("right") : $(".vor2 wrn2").html("left");
+           xPrev<e.pageX ? $(".Rtt").html("Rtt") : $(".Rtt").html("Rtstwk");
+           xPrev<e.pageX ? $(".p125").html("p125/43      23") : $(".p125").html("p125/39      141");
+           xPrev=e.pageX;
+          $(".anb617").html(e.pageX +', '+ e.pageY);
+       });
+    })
+
 
 
 
@@ -99,6 +108,124 @@ $(this).css("-ms-transform", str);
      } else if (left_dir < half_body_size_x && top_dir > half_body_size_y) {
        $(".LOC19").css("color", "#ffffff");
      }
+});
 
 
+$(function () {
+$({ n: 0 }).animate({n: 1E3 }, {
+duration: 50E3,
+step: function (a) {
+$(".a324789").html(a | 0)
+}
+})
+});
+
+
+
+var i = 0;
+var txt = "Солнце и Луна Вт, 1 фев, сегодня Долгота дня: 8 ч 39 мин Восход — 8:23 Заход — 17:03 Сегодня день на 4 минуты длиннее, чем вчера Луна стареющая, 0% Восход — 9:14 Заход — 15:19 Полнолуние — 16 февраля, через 16 дней Вт, 15 фев, сегодня   Ср, 16 Долгота дня: 9 ч 39 мин Восход — 7:54 Заход — 17:33 Сегодня день на 5 минут длиннее, чем вчера Луна растущая, 98% Восход — 14:17 Заход — 8:09 Ветер, м/с Вт, 15 фев, сегодня 000 Ю 300 Ю 600 ЮЮ 900 ЮЗ 1200 СЗ З З ЮЗ ЮЗ ЮЗ Вт, 22 мар, сегодня Ср, 23 Долгота дня: 12 ч 19 мин Восход — 6:27 Заход — 18:46 Сегодня день на 4 минуты длиннее, чем вчера Луна стареющая, 81% Восход — 23:11 Заход — 7:52 Полнолуние — 16 апреля, через 26 дней ебольшие возмущения 5 Слабая буря 6 Умеренная буря 7 Сильная буря 8 Шторм 9 Экстремальный шторм Вт, 22 мар 18:00 Вт, 22 мар 21:00 Ср, 23 мар 0:00 Ср, 23 мар 3:00 Ср, 23 мар 6:00 Ср, 23 мар 9:00 Ср, 23 мар 12:00 Ср, 23 мар 15:00 Ср, 23 мар 18:00 Ср, 23 мар 21:00 Чт, 24 мар 0:00 Чт, 24 мар 3:00 Чт, 24 мар 6:00 Чт, 24 мар 9:00 Чт, 24 мар 12:00 Чт, 24 мар 15:00 Чт, 24 мар 18:00 Чт, 24 мар 21:00 Пт, 25 мар 0:00 Пт, 25 мар 3:00"
+var speed = 110;
+$(document).ready(function firststring() {
+$(document).ready(function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("turnred").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+});
+});
+
+$(document).ready(function() {
+	$(".one").click( function () {
+    let rez = $('<div class="popup">1 </div>');
+    $("#callone").append(rez);
+    setTimeout( function() { rez.remove(); }, 500);
+  });
+});
+$(document).ready(function() {
+	$(".two").click( function () {
+    let rez1 = $('<div class="popup1">2 </div>');
+    $("#calltwo").append(rez1);
+    setTimeout( function() { rez1.remove(); }, 500);
+  });
+});
+
+$(document).ready(function() {
+	$(".three").click( function () {
+    let rez2 = $('<div class="popup2">3 </div>');
+    $("#callthree").append(rez2);
+    setTimeout( function() { rez2.remove(); }, 500);
+  });
+});
+
+$(document).ready(function() {
+	$(".four").click( function () {
+    let rez3 = $('<div class="popup3">4 </div>');
+    $("#callfour").append(rez3);
+    setTimeout( function() { rez3.remove(); }, 500);
+  });
+});
+
+$(document).ready(function() {
+	$(".five").click( function () {
+    let rez4 = $('<div class="popup4">5 </div>');
+    $("#callfive").append(rez4);
+    setTimeout( function() { rez4.remove(); }, 500);
+  });
+});
+
+$(document).ready(function() {
+	$(".six").click( function () {
+    let rez5 = $('<div class="popup5">6 </div>');
+    $("#callsix").append(rez5);
+    setTimeout( function() { rez5.remove(); }, 500);
+  });
+});
+
+$(document).ready(function() {
+	$(".seven").click( function () {
+    let rez6 = $('<div class="popup6">7 </div>');
+    $("#callseven").append(rez6);
+    setTimeout( function() { rez6.remove(); }, 500);
+  });
+});
+
+$(document).ready(function() {
+	$(".eight").click( function () {
+    let rez7 = $('<div class="popup7">8 </div>');
+    $("#calleight").append(rez7);
+    setTimeout( function() { rez7.remove(); }, 500);
+  });
+});
+
+$(document).ready(function() {
+	$(".nine").click( function () {
+    let rez8 = $('<div class="popup8">9 </div>');
+    $("#callnine").append(rez8);
+    setTimeout( function() { rez8.remove(); }, 500);
+  });
+});
+
+$(document).ready(function() {
+	$(".net").click( function () {
+    let rez11 = $('<div class="popup11"># </div>');
+    $("#callnet").append(rez11);
+    setTimeout( function() { rez11.remove(); }, 500);
+  });
+});
+
+$(document).ready(function() {
+	$(".zero").click( function () {
+    let rez12 = $('<div class="popup12">0 </div>');
+    $("#callzero").append(rez12);
+    setTimeout( function() { rez12.remove(); }, 500);
+  });
+});
+
+$(document).ready(function() {
+	$(".star").click( function () {
+    let rez10 = $('<div class="popup10">* </div>');
+    $("#callstar").append(rez10);
+    setTimeout( function() { rez10.remove(); }, 500);
+  });
 });
