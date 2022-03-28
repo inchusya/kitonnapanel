@@ -61,8 +61,16 @@ p{
 .weather { grid-area: weather;
 border: 1px solid #ffffff;
 height: 100%;
-animation: borderend 1.8s linear infinite;
+animation: weatherend 15s infinite alternate ease;
 animation-play-state: paused;
+}
+
+
+@keyframes weatherend {
+0% {}
+25% {transform:rotate(50deg);}
+50% {transform:rotate(-120deg);}
+100% { transform:rotate(300deg);}
 }
 
 
@@ -77,9 +85,26 @@ animation-play-state: paused;
     "7 8 9"
     "# 0 *";
   grid-area: phone;
+  animation: phoneend 25s infinite alternate ease;
+  animation-play-state: paused;
+}
+
+@keyframes phoneend {
+0% {}
+25% {transform:rotate(-300deg);}
+80% {transform:rotate(120deg);}
+100% { transform:rotate(100deg);}
 }
 .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .net, .zero, .star   {
   border: 1px solid #ffffff;
+  animation: phoneend2 25s infinite alternate ease;
+  animation-play-state: paused;
+}
+@keyframes phoneend2 {
+0% {}
+25% {transform:rotate(20deg);}
+80% {transform:rotate(-70deg);}
+100% { transform:rotate(10deg);}
 }
 
 #callone{
@@ -521,6 +546,15 @@ animation-play-state: paused;
   background-repeat: no-repeat;
   background-size: 137%;
   background-position: center;
+  animation: weatherend 25s infinite alternate ease;
+  animation-play-state: paused;
+}
+
+@keyframes mapend {
+0% {}
+25% {transform:rotate(10deg);}
+50% {transform:rotate(-180deg);}
+100% { transform:rotate(-20deg);}
 }
 
 
@@ -542,6 +576,15 @@ animation-play-state: paused;
   background-image: url(../img/course.svg);
   background-repeat: no-repeat;
   background-position: center;
+  animation: courseend 25s infinite alternate ease;
+  animation-play-state: paused;
+}
+
+@keyframes courseend {
+0% {}
+20% {transform:rotate(10deg);}
+80% {transform:rotate(180deg);}
+100% { transform:rotate(-240deg);}
 }
 
 /* .courseimg{
@@ -679,17 +722,39 @@ animation-play-state: paused;
   position: relative;
   margin-left: 63%;
   margin-top: 18%;
+  animation: number21end 10s ease-in-out infinite;
+  animation-play-state: paused;
 }
 .locapp{
   position: relative;
   margin-left: 63%;
   margin-top: 9%;
+  animation: locappend 18s ease-in-out infinite;
+  animation-play-state: paused;
+}
+@keyframes locappend {
+  0% {}
+  70% {left:10%;  top:-4%; transform:rotate(70deg)}
+  100% {left:0%;  top:-10%; transform:rotate(-175deg);}
 }
 
 .screen { grid-area: screen;
   border: 1px solid #ffffff;
   height: 36.6vw;
+  animation: screenend 18s ease-in-out infinite;
+  animation-play-state: paused;
 }
+@keyframes screenend {
+  0% {}
+  20% {border-color:#001EFF; }
+  50% {border-color:#7591FF; }
+  55% {border-color:#001EFF; }
+  70% {border-color:#001EFF; }
+  80% {border-color:#ffffff; }
+  100% {border-color:#7591FF;}
+}
+
+
 .screenimg{
   background-image: url(../img/screen.svg);
   background-repeat: no-repeat;
@@ -711,22 +776,32 @@ animation-play-state: paused;
 .ifs21{
   margin-left: 16%;
   margin-top: 2%;
+  animation: screenimgend 20s ease-in-out ;
+  animation-play-state: paused;
 }
 .vor27{
   margin-left: 46%;
   margin-top: -2%;
+  animation: number21end 10s ease-in-out infinite;
+  animation-play-state: paused;
 }
 .maNgain {
   margin-left: 80%;
   margin-top: 6%;
+  animation: vozend 5s infinite alternate ease;
+  animation-play-state: paused;
 }
 .nADF1034{
   margin-left: 16%;
   margin-top: 31%;
+  animation: vozend 20s infinite alternate ease;
+  animation-play-state: paused;
 }
 .vor2 wrn2{
   margin-left: 68%;
   margin-top: -2%;
+  animation: locappend 30s ease-in-out infinite;
+  animation-play-state: paused;
 }
 .triangle{
   background-image: url(../img/triangle.svg);
@@ -746,78 +821,159 @@ animation-play-state: paused;
   margin-left: 12%;
   margin-top: 17%;
   animation: number21end 20s ease-in-out infinite;
-  animation: pEND 2s linear infinite;
-  animation-play-state: paused;
-}
+  animation-play-state: paused;}
+
 
 @keyframes number21end {
   0% {}
-  5% {left:10%;  top:8%;}
-  49% {left:-50%;  top:20%; transform:rotate(-50deg);}
-  50% {left:-5%;  top:100%; transform:rotate(50deg);}
-  100% {left:60%;  top:-60%; transform:rotate(350deg);}
+  5% {color: #ffffff; left:10%;  top:8%;}
+  49% {left:40%;  top:20%; transform:rotate(-50deg);}
+  50% {color: #001EFF;left:5%;  top:100%; transform:rotate(50deg);}
+  100% { color: #ffffff;left:60%;  top:50%; transform:rotate(350deg);}
 }
 .number22{
   position: absolute;
   margin-left: 15%;
   margin-top: 12%;
+  animation: number22end 20s ease-in-out infinite;
+  animation-play-state: paused;
+}
+@keyframes number22end {
+0% {}
+5% {color: #ffffff; left:40%;  top:8%;}
+49% {left:20%;  top:30%; transform:rotate(-20deg);}
+50% {color: #001EFF;left:5%;  top:100%; transform:rotate(80deg);}
+100% { color: #ffffff;left:60%;  top:50%; transform:rotate(150deg);}
 }
 .number23{
   position: absolute;
   margin-left: 19%;
   margin-top: 9%;
+  animation: number23end 20s ease-in-out infinite;
+  animation-play-state: paused;
 }
+@keyframes number23end {
+0% {}
+5% {color: #ffffff; left:20%;  top:10%;}
+49% {left:40%;  top:-30%; transform:rotate(20deg);}
+80% {color: #001EFF;left:5%;  top:100%; transform:rotate(-90deg);}
+100% { color: #ffffff;left:60%;  top:50%; transform:rotate(10deg);}
+}
+
 .number24{
   position: absolute;
   margin-left: 24%;
   margin-top: 7%;
+  animation: number24end 20s ease-in-out infinite;
+  animation-play-state: paused;
+}
+@keyframes number24end {
+0% {}
+10% {color: #ffffff; left:20%;  top:10%;}
+69% {left:10%;  top:-30%; transform:rotate(90deg);}
+80% {color: #001EFF;left:50%;  top:100%; transform:rotate(-20deg);}
+100% { color: #ffffff;left:-60%;  top:-20%; transform:rotate(100deg);}
 }
 .number25{
   position: absolute;
   margin-left: 30%;
   margin-top: 7%;
+  animation: number25end 20s ease-in-out infinite;
+  animation-play-state: paused;
+}
+@keyframes number25end {
+0% {}
+5% {color: #ffffff; left:-20%;  top:0%;}
+49% {left:0%;  top:-90%; transform:rotate(80deg);}
+55% {color: #001EFF;left:50%;  top:10%; transform:rotate(0deg);}
+100% { color: #ffffff;left:0%;  top:-20%; transform:rotate(-100deg);}
 }
 .number26{
   position: absolute;
   margin-left: 36%;
   margin-top: 8%;
+  animation: number26end 20s ease-in-out infinite;
+  animation-play-state: paused;
+}
+@keyframes number26end {
+0% {}
+25% {color: #ffffff; left:-60%;  top:60%;}
+49% {left:5%;  top:-90%; transform:rotate(-20deg);}
+50% {color: #001EFF;left:50%;  top:70%; transform:rotate(16deg);}
+100% { color: #ffffff;left:4%;  top:-20%; transform:rotate(0deg);}
 }
 .number27{
   position: absolute;
   margin-left: 41%;
   margin-top: 11%;
+  animation: number27end 20s ease-in-out infinite;
+  animation-play-state: paused;
+}
+@keyframes number27end {
+0% {}
+5% {color: #ffffff; left:-60%;  top:60%;}
+49% {left:5%;  top:-90%; transform:rotate(-20deg);}
+50% {color: #001EFF;left:50%;  top:70%; transform:rotate(16deg);}
+100% { color: #ffffff;left:4%;  top:-20%; transform:rotate(0deg);}
 }
 .number28{
   position: absolute;
   margin-left: 44%;
   margin-top: 15%;
+  animation: number28end 20s ease-in-out infinite;
+  animation-play-state: paused;
+}
+@keyframes number28end {
+0% {}
+18% {color: #ffffff; left:-6%;  top:6%;}
+30% {left:5%;  top:-90%; transform:rotate(-5deg);}
+50% {color: #001EFF;left:50%;  top:70%; transform:rotate(160deg);}
+70% {color: #001EFF;left:40%;  top:-4%; transform:rotate(-16deg);}
+100% { color: #ffffff;left:4%;  top:-20%; transform:rotate(10deg);}
 }
 .number29{
   position: absolute;
   margin-left: 47%;
   margin-top: 20%;
+  animation: number29end 20s ease-in-out infinite;
+  animation-play-state: paused;
+}
+@keyframes number29end {
+0% {}
+25% {color: #ffffff; left:-6%;  top:6%;}
+40% {left:5%;  top:-90%; transform:rotate(-50deg);}
+50% {color: #001EFF;left:5%;  top:10%; transform:rotate(10deg);}
+70% {color: #001EFF;left:20%;  top:-45%; transform:rotate(-10deg);}
+100% { color: #ffffff;left:4%;  top:-2%; transform:rotate(100deg);}
 }
 .a5674c7{
   position: absolute;
   margin-left: 19%;
   margin-top: 13%;
+  animation: number27end 10s linear infinite;
+  animation-play-state: paused;
 }
 .a6f7ddc{
   position: absolute;
   margin-left: 23%;
   margin-top: 15%;
+  animation: vozend 5s infinite alternate ease;
+  animation-play-state: paused;
 }
 .anb617{
   position: absolute;
   margin-left: 26%;
   margin-top: 19%;
+  animation: vozend 30s infinite alternate ease;
+  animation-play-state: paused;
 }
 .a324789{
   position: absolute;
   margin-left: 26%;
   margin-top: 22%;
-  /* animation: compasend 3s infinite alternate ease-out;
-  animation-play-state: paused; */
+  animation: number24end 40s ease-in-out infinite;
+  animation-play-state: paused;
+
 }
 
 .screenimg{}
@@ -862,17 +1018,13 @@ animation-play-state: paused; */
 
 .speedimg{
   position: absolute;
-  /* animation: speedimgend 5s infinite alternate ease; */
-  animation: speedimgend2 5s infinite alternate ease;
+
+  animation: speedimgend 15s infinite alternate ease;
   animation-play-state: paused;
   transform-origin: center bottom;
 }
-/* @keyframes speedimgend {
- 0% {transform:  rotate(0deg); }
- 50%{ transform:  rotate(100deg); }
-   100% {transform:  rotate(-180deg);}
-} */
-@keyframes speedimgend2 {
+
+@keyframes speedimgend {
   0% {}
   25% {left:-10%;  top:-20%;}
   50% {left:-5%;  top:20%; transform:rotate(50deg);}
@@ -944,6 +1096,17 @@ animation-play-state: paused; */
   border: 1px solid #ffffff;
   height: 20vw;
   position: relative;
+  animation: buttonsend 25s infinite alternate ease;
+  animation-play-state: paused;
+
+}
+
+@keyframes buttonsend {
+0% {}
+10% {transform:rotate(30deg);}
+40% {transform:rotate(-10deg);}
+60% {transform:rotate(-100deg);}
+100% { transform:rotate(200deg);}
 }
 .circlemain{
   position: absolute;

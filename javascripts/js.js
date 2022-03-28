@@ -1,13 +1,5 @@
 
 
-
-
-
-
-
-
-
-
 $(function(){
 $(".s1, .s2, .s3, .s4, .s5, .s6, .circle1img ").click(function(){
 $(this).toggleClass("white")
@@ -172,21 +164,17 @@ $(document).ready(function() {
     if (str1.includes("1") && str1.includes("2") && str1.includes("3")) {
       alert("Код исправен")
       $(".screenimg").css("animation-play-state", "running")
+      $(".weather, .phone, .map, .course, .screen, .buttons").css("animation-play-state", "running")
+      $(".one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .net, .zero, .star").css("animation-play-state", "running")
       $(".voz").css("animation-play-state", "running")
       $("body").css("animation-play-state", "running")
       $(".speedimg").css("animation-play-state", "running")
       $(".dropbar").css("animation-play-state", "running")
       $(".bar").css("animation-play-state", "running")
       $(".GSNASA11").css("animation-play-state", "running")
-      $(".p125").css("animation-play-state", "running")
-      $(".LOC19").css("animation-play-state", "running")
-      $(".loc18").css("animation-play-state", "running")
-      $(".loc17").css("animation-play-state", "running")
-      $(".loc16").css("animation-play-state", "running")
-      $(".loc15").css("animation-play-state", "running")
-      $(".loc14").css("animation-play-state", "running")
-      $(".loc13").css("animation-play-state", "running")
-      $("#number21").css("animation-play-state", "running")
+      $(".p125, .a5674c7, .a6f7ddc, .anb617, .a324789").css("animation-play-state", "running")
+      $(".LOC19, .loc18, .loc17, .loc16, .loc15, .loc14, .loc13").css("animation-play-state", "running")
+      $("#number21, .number22, .number22, .number23, .number25, .number26, .number27, .number28, .number29").css("animation-play-state", "running")
       $("p").css("animation-play-state", "running")
       setTimeout(function() {
              $(".screenimg").css("animation-play-state", "paused");
