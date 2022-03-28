@@ -546,15 +546,15 @@ animation-play-state: paused;
   background-repeat: no-repeat;
   background-size: 137%;
   background-position: center;
-  animation: weatherend 25s infinite alternate ease;
+  animation: mapend 25s infinite alternate ease;
   animation-play-state: paused;
 }
 
 @keyframes mapend {
 0% {}
-25% {transform:rotate(10deg);}
+25% {opacity: 0%; transform:rotate(10deg);}
 50% {transform:rotate(-180deg);}
-100% { transform:rotate(-20deg);}
+100% {opacity: 100%; transform:rotate(-20deg);}
 }
 
 
