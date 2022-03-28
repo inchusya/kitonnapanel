@@ -550,6 +550,7 @@ animation-play-state: paused;
   animation-play-state: paused;
 }
 
+
 @keyframes mapend {
 0% {}
 25% {opacity: 0%; transform:rotate(10deg);}
@@ -567,7 +568,7 @@ animation-play-state: paused;
   margin: 1%;
 }
 .mapimg{
-  /* width: 100%; */
+
 }
 
 .course { grid-area: course;
