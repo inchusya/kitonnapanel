@@ -38,21 +38,41 @@ p{
   .phonetext:hover{
     color: #FF5B01;
   }
-  .alarm{
+  .alarm, .alarm2{
     display: none;
     position: absolute;
     z-index: 1;
   background-color:  #FF5B01;
+  cursor: pointer;
+  animation: alarmend 10s ease-in-out infinite;
+  animation-play-state: paused;
   }
+
+  @keyframes alarmend {
+  0% {}
+  25% {left:-9%;  top:-9%; background-color: #ffffff; transform:rotate(20deg);}
+  80% {left:3%;  top:2%; background-color: #FF5B01;transform:rotate(-70deg);}
+  100% {left:-9%;  top:5%; background-color: #ffffff; transform:rotate(10deg);}
+  }
+
+
   .t143{
-    color:#001EFF;
+    color:#002EAB;
   }
-  .alarmtext{
-    font-size: 25px;
+  .alarmtext, .alarmtext2{
+    font-size: 22px;
     padding-left: 1vw;
     padding-right: 1vw;
     padding-top: 1vw;
     padding-bottom: 1vw;
+    animation: alarmtextend 15s ease-in-out infinite;
+    animation-play-state: paused;
+  }
+  @keyframes alarmtextend {
+  0% {}
+  25% {color: #FF5B01; transform:rotate(20deg);}
+  80% {color: #ffffff;transform:rotate(-70deg);}
+  100% {color: #FF5B01; transform:rotate(10deg);}
   }
 
 .kitonnapanel {
@@ -779,14 +799,15 @@ animation-play-state: paused;
   position: absolute;
   top: 22vw;
   left: 30vw;
-  animation: screenimgend 10s ease-in-out ;
+  animation: screenimgend 10s ease-in-out infinite ;
   animation-play-state: paused;
 }
 @keyframes screenimgend {
     0% {}
     25% {left:-10%;  top:-20%;}
     50% {left:-5%;  top:20%; transform:rotate(50deg);}
-    100% {left:40%;  top:-60%; transform:rotate(700deg);}
+    90% {left:40%;  top:-60%; transform:rotate(700deg);}
+    100% {transform:rotate(30deg);}
   }
 .ifs21{
   margin-left: 16%;
