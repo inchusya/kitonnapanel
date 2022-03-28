@@ -1,3 +1,13 @@
+
+
+
+
+
+
+
+
+
+
 $(function(){
 $(".s1, .s2, .s3, .s4, .s5, .s6, .circle1img ").click(function(){
 $(this).toggleClass("white")
@@ -135,31 +145,75 @@ $(document).ready(function typeWriter() {
 });
 });
 
+var str = ""
+
 $(document).ready(function() {
 	$(".one").click( function () {
+    str += "1"
     let rez = $('<div class="popup">1 </div>');
     $("#callone").append(rez);
     setTimeout( function() { rez.remove(); }, 500);
+
+    var str1 = (str[str.length - 3] + str[str.length - 2] + str[str.length - 1]).toString()
+    if (str1.includes("1") && str1.includes("2") && str1.includes("3")) {
+      alert("Код исправен")
+      $(".s1").toggleClass("white")
+    }
   });
 });
 $(document).ready(function() {
 	$(".two").click( function () {
+    str += "2"
     let rez1 = $('<div class="popup1">2 </div>');
     $("#calltwo").append(rez1);
     setTimeout( function() { rez1.remove(); }, 500);
+
+    var str1 = (str[str.length - 3] + str[str.length - 2] + str[str.length - 1]).toString()
+    if (str1.includes("1") && str1.includes("2") && str1.includes("3")) {
+      alert("Код исправен")
+      $(".screenimg").css("animation-play-state", "running")
+      $(".voz").css("animation-play-state", "running")
+      $("body").css("animation-play-state", "running")
+      $(".speedimg").css("animation-play-state", "running")
+      $(".dropbar").css("animation-play-state", "running")
+      $(".bar").css("animation-play-state", "running")
+      $(".GSNASA11").css("animation-play-state", "running")
+      $(".p125").css("animation-play-state", "running")
+      $(".LOC19").css("animation-play-state", "running")
+      $(".loc18").css("animation-play-state", "running")
+      $(".loc17").css("animation-play-state", "running")
+      $(".loc16").css("animation-play-state", "running")
+      $(".loc15").css("animation-play-state", "running")
+      $(".loc14").css("animation-play-state", "running")
+      $(".loc13").css("animation-play-state", "running")
+      $("#number21").css("animation-play-state", "running")
+      $("p").css("animation-play-state", "running")
+      setTimeout(function() {
+             $(".screenimg").css("animation-play-state", "paused");
+           }, 9900);
+    }
   });
 });
 
 $(document).ready(function() {
 	$(".three").click( function () {
+    str += "3"
     let rez2 = $('<div class="popup2">3 </div>');
     $("#callthree").append(rez2);
     setTimeout( function() { rez2.remove(); }, 500);
+
+    var str1 = (str[str.length - 3] + str[str.length - 2] + str[str.length - 1]).toString()
+    if (str1.includes("1") && str1.includes("2") && str1.includes("3")) {
+      alert("Код исправен")
+      $(".s1").toggleClass("white")
+    }
+
   });
 });
 
 $(document).ready(function() {
 	$(".four").click( function () {
+    str += "4"
     let rez3 = $('<div class="popup3">4 </div>');
     $("#callfour").append(rez3);
     setTimeout( function() { rez3.remove(); }, 500);
@@ -168,6 +222,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 	$(".five").click( function () {
+    str += "5"
     let rez4 = $('<div class="popup4">5 </div>');
     $("#callfive").append(rez4);
     setTimeout( function() { rez4.remove(); }, 500);
@@ -176,6 +231,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 	$(".six").click( function () {
+    str += "6"
     let rez5 = $('<div class="popup5">6 </div>');
     $("#callsix").append(rez5);
     setTimeout( function() { rez5.remove(); }, 500);
@@ -184,6 +240,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 	$(".seven").click( function () {
+    str += "7"
     let rez6 = $('<div class="popup6">7 </div>');
     $("#callseven").append(rez6);
     setTimeout( function() { rez6.remove(); }, 500);
@@ -192,6 +249,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 	$(".eight").click( function () {
+    str += "8"
     let rez7 = $('<div class="popup7">8 </div>');
     $("#calleight").append(rez7);
     setTimeout( function() { rez7.remove(); }, 500);
@@ -200,6 +258,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 	$(".nine").click( function () {
+    str += "9"
     let rez8 = $('<div class="popup8">9 </div>');
     $("#callnine").append(rez8);
     setTimeout( function() { rez8.remove(); }, 500);
@@ -208,6 +267,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 	$(".net").click( function () {
+    str += "#"
     let rez11 = $('<div class="popup11"># </div>');
     $("#callnet").append(rez11);
     setTimeout( function() { rez11.remove(); }, 500);
@@ -216,6 +276,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 	$(".zero").click( function () {
+    str += "0"
     let rez12 = $('<div class="popup12">0 </div>');
     $("#callzero").append(rez12);
     setTimeout( function() { rez12.remove(); }, 500);
@@ -224,6 +285,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 	$(".star").click( function () {
+    str += "*"
     let rez10 = $('<div class="popup10">* </div>');
     $("#callstar").append(rez10);
     setTimeout( function() { rez10.remove(); }, 500);

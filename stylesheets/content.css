@@ -1,12 +1,32 @@
 body {
   background: #001EFF;
+  animation: bodyend 1.8s linear infinite;
+  animation-play-state: paused;
 }
+
+@keyframes bodyend {
+  0% {background: #001EFF;}
+  49% {background: #001EFF;}
+  50% {background: #FF5B01;}
+  99% {background: #FF5B01;}
+  100% {background: #001EFF;}
+}
+
 p{
   font-family: ProximaNova;
     color:#ffffff;
     font-size: 19px;
     text-transform: uppercase;
+    animation: pEND 2s linear infinite;
+    animation-play-state: paused;
+
   }
+  @keyframes pEND {
+    0% {color: #ffffff;}
+    50% {color: #001EFF;}
+    100% {color: #ffffff;}
+  }
+
   .phonetext{
     font-family: ProximaNova;
     color:#ffffff;
@@ -34,12 +54,17 @@ p{
     width: 98vw;
     height: 98vh;
     margin: 2vh 2vh 2vh 2vh
+
 }
+
 
 .weather { grid-area: weather;
 border: 1px solid #ffffff;
 height: 100%;
+animation: borderend 1.8s linear infinite;
+animation-play-state: paused;
 }
+
 
 .phone {
   display: grid;
@@ -497,6 +522,8 @@ height: 100%;
   background-size: 137%;
   background-position: center;
 }
+
+
 .redcircle{
   width: 1vw;
   height: 1vw;
@@ -516,55 +543,137 @@ height: 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
-.courseimg{
+
+/* .courseimg{
   position: absolute;
   margin-left:3%;
   margin-top: 7%;
-}
+  animation: courseimgend 2s infinite ;
+  animation-play-state: paused;
+} */
+
+
+
 .GSNASA11{
   position: relative;
   margin-left: 11%;
   margin-top: 12%;
+  animation: GSNASA11end 20s ease-in-out infinite;
+  animation-play-state: paused;
+
+}
+@keyframes GSNASA11end {
+  0% {}
+  25% {left:-80%;  top:-20%;}
+  50% {left:-2%;  top:-90%; transform:rotate(150deg);}
+  100% {left:80%;  top:-30%; transform:rotate(2deg);}
 }
 .p125{
   margin-left: 11%;
   margin-top: 2%;
   position: relative;
+  animation: p125end 20s ease-in-out infinite;
+  animation-play-state: paused;
+}
+@keyframes p125end {
+  0% {}
+  25% {left:-30%;  top:-4%; transform:rotate(30deg)}
+  50% {left:40%;  top:-40%;}
+  100% {left:20%;  top:-90%; transform:rotate(-180deg);}
 }
 .LOC19{
   position: relative;
   margin-left: 68%;
   margin-top: 23%;
+  animation: LOC19end 9s ease-in-out infinite;
+  animation-play-state: paused;
+}
+@keyframes LOC19end {
+  0% {}
+  25% {left:-3%;  top:-90%; transform:rotate(30deg)}
+  50% {left:-50%;  top:19%; transform:rotate(0deg)}
+  100% {left:0%;  top:-90%; transform:rotate(-180deg);}
 }
 .loc18{
   position: relative;
   margin-left: 38%;
   margin-top: -11%;
+  animation: loc18end 5s ease-in-out infinite;
+  animation-play-state: paused;
+}
+@keyframes loc18end {
+  0% {}
+  25% {left:-3%;  top:0%; transform:rotate(30deg)}
+  50% {left:33%;  top:10%; transform:rotate(-30deg)}
+  60% {left:0%;  top:19%; transform:rotate(-100deg)}
+  100% {left:0%;  top:-90%; transform:rotate(20deg);}
 }
 .loc17{
   position: relative;
   margin-left: 23%;
   margin-top: 1%;
+  animation: loc17end 24s ease-in infinite ;
+  animation-play-state: paused;
+}
+@keyframes loc17end {
+  0% {}
+  25% {left:-3%;  top:0%; transform:rotate(-100deg)}
+  50% {left:-99%;  top:-89%; transform:rotate(4deg)}
+  100% {left:40%;  top:-90%; transform:rotate(360deg);}
 }
 .loc16{
   position: relative;
   margin-left: 36%;
   margin-top: 1%;
+  animation: loc16end 14s ease-in-out infinite ;
+  animation-play-state: paused;
 }
+@keyframes loc16end {
+  0% {}
+  15% {left:-3%;  top:0%; transform:rotate(-100deg)}
+  50% {left:-99%;  top:-89%; transform:rotate(4deg)}
+  70% {left:-59%;  top:-82%; transform:rotate(-230deg)}
+  100% {left:40%;  top:-90%; transform:rotate(360deg);}
+}
+
 .loc15{
   position: relative;
   margin-left: 23%;
   margin-top: 1%;
+  animation: loc15end 24s ease-in-out infinite ;
+  animation-play-state: paused;
+}
+@keyframes loc15end {
+  0% {}
+  25% {left:34%;  top:25%; transform:rotate(-10deg)}
+  50% {left:-4%;  top:-44%; transform:rotate(20deg)}
+  100% {left:10%;  top:-10%; transform:rotate(0deg);}
 }
 .loc14{
   position: relative;
   margin-left: 23%;
   margin-top: 1%;
+  animation: loc14end 24s ease-out infinite ;
+  animation-play-state: paused;
+}
+@keyframes loc14end {
+  0% {}
+  25% {left:76%;  top:5%; transform:rotate(10deg)}
+  50% {left:-40%;  top:-44%; transform:rotate(-200deg)}
+  100% {left:0%;  top:-100%; transform:rotate(175deg);}
 }
 .loc13{
   position: relative;
   margin-left: 23%;
   margin-top: 3%;
+  animation: loc13end 10s ease-out infinite ;
+  animation-play-state: paused;
+}
+@keyframes loc13end {
+  0% {}
+  15% {left:76%;  top:5%; transform:rotate(-90deg)}
+  70% {left:-40%;  top:-44%; transform:rotate(70deg)}
+  100% {left:0%;  top:-100%; transform:rotate(-175deg);}
 }
 .Rtt{
   position: relative;
@@ -590,7 +699,15 @@ height: 100%;
   position: absolute;
   top: 22vw;
   left: 30vw;
+  animation: screenimgend 10s ease-in-out ;
+  animation-play-state: paused;
 }
+@keyframes screenimgend {
+    0% {}
+    25% {left:-10%;  top:-20%;}
+    50% {left:-5%;  top:20%; transform:rotate(50deg);}
+    100% {left:40%;  top:-60%; transform:rotate(700deg);}
+  }
 .ifs21{
   margin-left: 16%;
   margin-top: 2%;
@@ -624,10 +741,21 @@ height: 100%;
 
 }
 
-.number21{
+#number21{
   position: absolute;
   margin-left: 12%;
   margin-top: 17%;
+  animation: number21end 20s ease-in-out infinite;
+  animation: pEND 2s linear infinite;
+  animation-play-state: paused;
+}
+
+@keyframes number21end {
+  0% {}
+  5% {left:10%;  top:8%;}
+  49% {left:-50%;  top:20%; transform:rotate(-50deg);}
+  50% {left:-5%;  top:100%; transform:rotate(50deg);}
+  100% {left:60%;  top:-60%; transform:rotate(350deg);}
 }
 .number22{
   position: absolute;
@@ -688,22 +816,32 @@ height: 100%;
   position: absolute;
   margin-left: 26%;
   margin-top: 22%;
+  /* animation: compasend 3s infinite alternate ease-out;
+  animation-play-state: paused; */
 }
 
 .screenimg{}
 
 .speed { grid-area: speed;
-
+/* animation: speedimgend2 5s infinite alternate ease;
+animation-play-state: paused; */
 }
 
 .compas { grid-area: compas;
-
+/* animation: compasend 3s infinite alternate ease-out;
+animation-play-state: paused; */
 }
+/* @keyframes compasend {
+    0% {}
+    25% {left:-10%;  top:-20%;}
+    50% {left:-5%;  top:20%; ransform:rotate(50deg);}
+    100% {left:40%;  top:-50%; ransform:rotate(700deg);}
+  } */
 .arrowimg{
   position: absolute;
   margin-left: 5%;
   margin-top: 3%;
-  animation: spin 2s infinite alternate ease-out;
+  animation: spin 3s infinite alternate ease-out;
 }
 @keyframes spin {
    0% {transform:  rotate(0) scale(1);}
@@ -719,9 +857,27 @@ height: 100%;
 
 @keyframes spin2 {
  0% {transform:  rotate(130deg);}
-   100% {transform:  rotate(-130deg);}
+   100% {transform:  rotate(-180deg);}
 }
 
+.speedimg{
+  position: absolute;
+  /* animation: speedimgend 5s infinite alternate ease; */
+  animation: speedimgend2 5s infinite alternate ease;
+  animation-play-state: paused;
+  transform-origin: center bottom;
+}
+/* @keyframes speedimgend {
+ 0% {transform:  rotate(0deg); }
+ 50%{ transform:  rotate(100deg); }
+   100% {transform:  rotate(-180deg);}
+} */
+@keyframes speedimgend2 {
+  0% {}
+  25% {left:-10%;  top:-20%;}
+  50% {left:-5%;  top:20%; transform:rotate(50deg);}
+  100% {left:40%;  top:-60%; transform:rotate(700deg);}
+}
 
 
 
@@ -740,6 +896,8 @@ height: 100%;
   position: absolute;
   top: 3.5vw;
   left: 10vw;
+  animation: speedimgend2 5s infinite alternate ease;
+  animation-play-state: paused;
 }
 .dropbar2{
   background-image: url(../img/bartear.svg);
@@ -811,7 +969,8 @@ height: 100%;
 
 
 .triangle:hover, .inbar:hover {
-   transform: scale(1.2);}
+   transform: scale(1.2);
+ }
 
 .dropbar2:hover, .dropbar3:hover {
   transform: scale(1.6);
@@ -845,6 +1004,8 @@ height: 100%;
   display: inline-block;
   margin: 0.4%;
   border: 1px solid #ffffff;
+  animation: speedimgend2 5s infinite alternate ease;
+  animation-play-state: paused;
 }
 .verticalbar{
   position: absolute;
@@ -885,6 +1046,12 @@ height: 100%;
   position: relative;
   top: -1.3vw;
   left: 7vw;
+  animation: vozend 5s infinite alternate ease;
+  animation-play-state: paused;
+}
+@keyframes vozend {
+ 0% {transform:  rotate(0deg);}
+   100% {transform:  rotate(-180deg);}
 }
 .white{
   background-color: white;
