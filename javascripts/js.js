@@ -163,21 +163,15 @@ $(document).ready(function() {
     var str1 = (str[str.length - 3] + str[str.length - 2] + str[str.length - 1]).toString()
     if (str1.includes("1") && str1.includes("2") && str1.includes("3")) {
       alert("Код исправен")
-      $(".screenimg").css("animation-play-state", "running")
+      $("p, body, .screenimg, .voz, .speedimg, .dropbar, .bar, .GSNASA11").css("animation-play-state", "running")
       $(".weather, .phone, .map, .course, .screen, .buttons").css("animation-play-state", "running")
       $(".one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .net, .zero, .star").css("animation-play-state", "running")
-      $(".voz").css("animation-play-state", "running")
-      $("body").css("animation-play-state", "running")
-      $(".speedimg").css("animation-play-state", "running")
-      $(".dropbar").css("animation-play-state", "running")
-      $(".bar").css("animation-play-state", "running")
-      $(".GSNASA11").css("animation-play-state", "running")
       $(".p125, .a5674c7, .a6f7ddc, .anb617, .a324789").css("animation-play-state", "running")
+      $(".circlebuttons, .square, .verticalbar, .inbar, .lever").css("animation-play-state", "running")
       $(".LOC19, .loc18, .loc17, .loc16, .loc15, .loc14, .loc13").css("animation-play-state", "running")
       $("#number21, .number22, .number22, .number23, .number25, .number26, .number27, .number28, .number29").css("animation-play-state", "running")
-      $("p").css("animation-play-state", "running")
       setTimeout(function() {
-             $(".screenimg").css("animation-play-state", "paused");
+             $(".screenimg, .speedimg").css("animation-play-state", "paused");
            }, 9900);
     }
   });

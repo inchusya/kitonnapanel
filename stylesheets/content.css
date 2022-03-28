@@ -567,9 +567,7 @@ animation-play-state: paused;
   display: inline-block;
   margin: 1%;
 }
-.mapimg{
 
-}
 
 .course { grid-area: course;
   border: 1px solid #ffffff;
@@ -1113,12 +1111,21 @@ animation-play-state: paused; */
   position: absolute;
   left: 9.5vw;
   top: 9.5vw;
-
 }
+
 .circlebuttons{
   width: 30vw;
   height: 3vw;
   margin-top: 1%;
+  animation: circlebuttonsend 25s infinite alternate ease;
+  animation-play-state: paused;
+
+}
+@keyframes circlebuttonsend {
+  0% {}
+  15% { transform:rotate(10deg);}
+  70% {transform:rotate(-180deg);}
+  100% { transform:rotate(-20deg);}
 }
 
 .circle1img{
@@ -1129,6 +1136,8 @@ animation-play-state: paused; */
     display: inline-block;
     margin: 1%;
     cursor: pointer;
+    animation: circlemainend 18s ease-in-out infinite;
+    animation-play-state: paused;
 }
 
 
@@ -1161,6 +1170,9 @@ animation-play-state: paused; */
   display: inline-block;
   margin: 2.5% 1% 1% 1%;
   border: 1px solid #ffffff;
+  cursor: pointer;
+  animation: circlebuttonsend 25s infinite alternate ease;
+  animation-play-state: paused;
 }
 .bar{
   width: 18px;
@@ -1176,12 +1188,29 @@ animation-play-state: paused; */
   left: 38vw;
   width: 12vw;
   top: 3.5vw;
-
+  animation: verticalbarend 25s infinite alternate ease;
+  animation-play-state: paused;
+ }
+@keyframes verticalbarend {
+  0% {}
+  25% { transform:rotate(10deg);}
+  50% {transform:rotate(-180deg);}
+  100% {transform:rotate(-20deg);}
 }
 .inbar{
   height: 0.5vw;
   background-color: white;
   cursor: ns-resize;
+  animation: inbarend 15s infinite alternate ease;
+  animation-play-state: paused;
+}
+@keyframes inbarend {
+  0% {}
+  30% {opacity: 0%; transform:rotate(100deg);}
+  40% {opacity: 0%; transform:rotate(200deg);}
+  50% {opacity: 100%;transform:rotate(-360deg);}
+  70% {opacity: 100%;transform:rotate(-60deg);}
+  100% {opacity: 0%;transform:rotate(-20deg);}
 }
 .lever{
   width: 10vw;
@@ -1190,6 +1219,14 @@ animation-play-state: paused; */
   border: 1px solid #ffffff;
   left: 8vw;
   top: 0vw;
+  animation: leverend 10s infinite alternate ease;
+  animation-play-state: paused;
+}
+@keyframes leverend {
+  0% {}
+  5% {opacity: 0%; transform:rotate(40deg);}
+  40% {opacity: 100%;transform:rotate(-60deg);}
+  100% {opacity: 0%;transform:rotate(-100deg);}
 }
 .leverimg{
   position: absolute;
