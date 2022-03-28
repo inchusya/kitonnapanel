@@ -38,6 +38,22 @@ p{
   .phonetext:hover{
     color: #FF5B01;
   }
+  .alarm{
+    display: none;
+    position: absolute;
+    z-index: 1;
+  background-color:  #FF5B01;
+  }
+  .t143{
+    color:#001EFF;
+  }
+  .alarmtext{
+    font-size: 25px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+  }
 
 .kitonnapanel {
   display: grid;
@@ -982,9 +998,10 @@ animation-play-state: paused;
 animation-play-state: paused; */
 }
 
-.compas { grid-area: compas;
-/* animation: compasend 3s infinite alternate ease-out;
-animation-play-state: paused; */
+.compasimg { grid-area: compas;
+  position: absolute;
+  animation: loc17end 30s ease-in-out infinite;
+  animation-play-state: paused;
 }
 /* @keyframes compasend {
     0% {}
@@ -1031,13 +1048,18 @@ animation-play-state: paused; */
 }
 
 
-
-.longbarimg{
+.longbar{
   position: absolute;
+  background-image: url(../img/longbar.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
   left: 10vw;
-  width: 45%;
+  width: 47%;
+  height: 9%;
   top: 3.5vw;
 }
+
 .dropbar{
   background-image: url(../img/bartear.svg);
   background-repeat: no-repeat;
@@ -1045,9 +1067,10 @@ animation-play-state: paused; */
   width: 3vw;
   height: 3vw;
   position: absolute;
-  top: 3.5vw;
-  left: 10vw;
+  top: 0.5vw;
   animation: speedimgend2 5s infinite alternate ease;
+  animation-play-state: paused;
+  animation: loc17end 10s ease-in-out infinite;
   animation-play-state: paused;
 }
 .dropbar2{
@@ -1060,6 +1083,8 @@ animation-play-state: paused; */
   top: 5vw;
   left: 3vw;
   cursor: pointer;
+  animation: loc13end 10s ease-in-out infinite;
+  animation-play-state: paused;
 }
 .dropbar3{
   background-image: url(../img/bartear.svg);
@@ -1071,6 +1096,8 @@ animation-play-state: paused; */
   top: 14vw;
   left: 3vw;
   cursor: pointer;
+  animation: loc15end 20s ease-in-out infinite;
+  animation-play-state: paused;
 }
 
 .gospin{
@@ -1084,12 +1111,16 @@ animation-play-state: paused; */
   width: 12%;
   left: 1vw;
   top: 3vw;
+  animation: number22end 20s ease-in-out infinite;
+  animation-play-state: paused;
 }
 .spin2img{
   position: absolute;
   width: 12%;
   top: 12vw;
   left: 1vw;
+  animation: number29end 20s ease-in-out infinite;
+  animation-play-state: paused;
 }
 .buttons { grid-area: buttons;
   border: 1px solid #ffffff;
@@ -1165,8 +1196,8 @@ animation-play-state: paused; */
   top: 9vw;
 }
 .square{
-  width: 43px;
-  height: 43px;
+  width: 3vw;
+  height: 3vw;
   display: inline-block;
   margin: 2.5% 1% 1% 1%;
   border: 1px solid #ffffff;
@@ -1175,8 +1206,8 @@ animation-play-state: paused; */
   animation-play-state: paused;
 }
 .bar{
-  width: 18px;
-  height: 219px;
+  width: 1.5vw;
+  height: 15.5vw;
   display: inline-block;
   margin: 0.4%;
   border: 1px solid #ffffff;
