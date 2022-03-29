@@ -849,7 +849,14 @@ animation-play-state: paused;
   top: 45vw;
   left: 45vw;
   cursor: grab;
+  animation: triangleend 25s ease-in-out infinite;
+  animation-play-state: paused;
+}
 
+  @keyframes triangleend {
+     0% {transform:  scale(1);}
+     50% {transform:  scale(10);}
+     100% {transform:  scale(1);}
 }
 
 #number21{
