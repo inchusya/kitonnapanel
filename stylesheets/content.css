@@ -96,7 +96,8 @@ p{
 
 .weather { grid-area: weather;
 border: 1px solid #ffffff;
-height: 100%;
+/* height: 100%; */
+height: 77.1vw;
 animation: weatherend 15s infinite alternate ease;
 animation-play-state: paused;
 }
@@ -112,6 +113,7 @@ animation-play-state: paused;
 
 .phone {
   display: grid;
+  height: 18.3vw;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 5% 5%;
@@ -607,7 +609,7 @@ animation-play-state: paused;
 
 .course { grid-area: course;
   border: 1px solid #ffffff;
-  height: 36.6vw;
+  height: 38vw;
   background-image: url(../img/course.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -775,7 +777,7 @@ animation-play-state: paused;
 
 .screen { grid-area: screen;
   border: 1px solid #ffffff;
-  height: 36.6vw;
+  height: 38vw;
   animation: screenend 18s ease-in-out infinite;
   animation-play-state: paused;
 }
@@ -1022,21 +1024,17 @@ animation-play-state: paused;
 .screenimg{}
 
 .speed { grid-area: speed;
+  height: 18.3vh;
 /* animation: speedimgend2 5s infinite alternate ease;
 animation-play-state: paused; */
 }
 
 .compasimg { grid-area: compas;
   position: absolute;
+  height: 18.3vw;
   animation: loc17end 30s ease-in-out infinite;
   animation-play-state: paused;
-}
-/* @keyframes compasend {
-    0% {}
-    25% {left:-10%;  top:-20%;}
-    50% {left:-5%;  top:20%; ransform:rotate(50deg);}
-    100% {left:40%;  top:-50%; ransform:rotate(700deg);}
-  } */
+} 
 .arrowimg{
   position: absolute;
   margin-left: 5%;
@@ -1062,7 +1060,7 @@ animation-play-state: paused; */
 
 .speedimg{
   position: absolute;
-
+  height: 18.3vw;
   animation: speedimgend 15s infinite alternate ease;
   animation-play-state: paused;
   transform-origin: center bottom;
@@ -1085,7 +1083,7 @@ animation-play-state: paused; */
   left: 10vw;
   width: 47%;
   height: 9%;
-  top: 3.5vw;
+  top: 1.5vw;
 }
 
 .dropbar{
@@ -1108,7 +1106,7 @@ animation-play-state: paused; */
   width: 3vw;
   height: 3vw;
   position: absolute;
-  top: 5vw;
+  top: 3vw;
   left: 3vw;
   cursor: pointer;
   animation: loc13end 10s ease-in-out infinite;
@@ -1121,38 +1119,42 @@ animation-play-state: paused; */
   width: 3vw;
   height: 3vw;
   position: absolute;
-  top: 14vw;
+  top: 11vw;
   left: 3vw;
   cursor: pointer;
   animation: loc15end 20s ease-in-out infinite;
   animation-play-state: paused;
 }
 
-.gospin{
+/* .gospin{
    transform: rotate(30deg);
    -webkit-transform: rotate(30deg);
    -ms-transform: rotate(30deg);
- }
+ } */
 
 .spin1img{
   position: absolute;
-  width: 12vw;
+  width: 12%;
   left: 1vw;
-  top: 3vw;
+  top: 1vw;
   animation: number22end 20s ease-in-out infinite;
   animation-play-state: paused;
 }
 .spin2img{
   position: absolute;
-  width: 12vw;
-  top: 12vw;
+  width: 12%;
+  top: 9vw;
   left: 1vw;
   animation: number29end 20s ease-in-out infinite;
   animation-play-state: paused;
 }
+
+/* .spin{
+position: relative;
+} */
 .buttons { grid-area: buttons;
   border: 1px solid #ffffff;
-  height: 20vw;
+  height: 18.3vw;
   position: relative;
   animation: buttonsend 25s infinite alternate ease;
   animation-play-state: paused;
@@ -1169,13 +1171,12 @@ animation-play-state: paused; */
 .circlemain{
   position: absolute;
   left: 9.5vw;
-  top: 9.5vw;
+  top: 8.5vw;
 }
 
 .circlebuttons{
   width: 30vw;
   height: 3vw;
-  margin-top: 1%;
   animation: circlebuttonsend 25s infinite alternate ease;
   animation-play-state: paused;
 
@@ -1221,7 +1222,7 @@ animation-play-state: paused; */
 .squarebuttons{
   position: relative;
   left: 23vw;
-  top: 9vw;
+  top: 7vw;
 }
 .square{
   width: 3vw;
@@ -1246,7 +1247,7 @@ animation-play-state: paused; */
   position: absolute;
   left: 38vw;
   width: 12vw;
-  top: 3.5vw;
+  top: 1.5vw;
   animation: verticalbarend 25s infinite alternate ease;
   animation-play-state: paused;
  }
