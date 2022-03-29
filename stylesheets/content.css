@@ -1136,7 +1136,7 @@ animation-play-state: paused; */
 
 .spin1img{
   position: absolute;
-  width: 12%;
+  width: 12vw;
   left: 1vw;
   top: 3vw;
   animation: number22end 20s ease-in-out infinite;
@@ -1144,7 +1144,7 @@ animation-play-state: paused; */
 }
 .spin2img{
   position: absolute;
-  width: 12%;
+  width: 12vw;
   top: 12vw;
   left: 1vw;
   animation: number29end 20s ease-in-out infinite;

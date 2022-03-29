@@ -2,6 +2,27 @@
   /* Desktop */
 }
 
+@media only screen and (min-device-width: 1365px) and (max-device-width: 1921px) {
+  /* iPad */
+	.kitonnapanel {
+	  display: grid;
+	  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	  grid-template-rows: 1fr 1fr 1fr 1fr;
+	  grid-auto-columns: 1fr;
+	  gap: 2.7% 1.4%;
+	  grid-auto-flow: row;
+	  grid-template-areas:
+	    "weather phone map map course"
+	    "weather screen screen screen course"
+	    "weather screen screen screen speed"
+	    "weather buttons buttons buttons compas";
+	    width: 49vw;
+	    height: 49vh;
+	    margin: 2vh 2vh 2vh 2vh
+
+	}
+}
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   /* iPad */
 }
@@ -16,6 +37,27 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* iPhone */
+
+	.kitonnapanel {
+	  display: grid;
+	  grid-template-columns: 1fr 1fr 1fr;
+	  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	  grid-auto-columns: 1fr;
+	  gap: 2.7% 1.4%;
+	  grid-auto-flow: row;
+	  grid-template-areas:
+	    "course map map"
+	    "course weather weather "
+	    "phone weather weather"
+			"screen screen screen"
+	    "screen screen screen"
+	    "speed speed compas "
+	    "buttons buttons buttons";
+	    width: 98vw;
+	    height: 98vh;
+	    margin: 2vh 2vh 2vh 2vh
+
+	}
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
