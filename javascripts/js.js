@@ -206,7 +206,7 @@ $(document).ready(function() {
       $(".p125, .a5674c7, .a6f7ddc, .anb617, .a324789").css("animation-play-state", "running")
       $(".circlebuttons, .square, .verticalbar, .inbar, .lever, .spin1img, .spin2img").css("animation-play-state", "running")
       $(".LOC19, .loc18, .loc17, .loc16, .loc15, .loc14, .loc13").css("animation-play-state", "running")
-      $("#number21, .number22, .number22, .number23, .number25, .number26, .number27, .number28, .number29").css("animation-play-state", "running")
+      // $("#number21, .number22, .number23, .number25, .number26, .number27, .number28, .number29").css("animation-play-state", "running")
 
     }
   });
@@ -303,20 +303,6 @@ $(document).ready(function() {
 
 
 
-// $(document).ready(function() {
-// 	$(".triangle").click( function () {
-//
-//       $("p, body, .screenimg, .voz, .speedimg, .triangle, .dropbar, .bar, .GSNASA11, .dropbar, .dropbar2, .dropbar3, .alarm, .alarm2 .alarmtext, .alarmtext2").css("animation-play-state", "paused")
-//       $(".weather, .phone, .map, .course, .screen, .compasimg, .buttons").css("animation-play-state", "paused")
-//       $(".one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .net, .zero, .star").css("animation-play-state", "paused")
-//       $(".p125, .a5674c7, .a6f7ddc, .anb617, .a324789").css("animation-play-state", "paused")
-//       $(".circlebuttons, .square, .verticalbar, .inbar, .lever, .spin1img, .spin2img").css("animation-play-state", "paused")
-//       $(".LOC19, .loc18, .loc17, .loc16, .loc15, .loc14, .loc13").css("animation-play-state", "paused")
-//       $("#number21, .number22, .number22, .number23, .number25, .number26, .number27, .number28, .number29").css("animation-play-state", "paused")
-//
-//
-//   });
-// });
 
 
 $(function () {
@@ -331,7 +317,7 @@ if (count == 1) {
     $(".p125, .a5674c7, .a6f7ddc, .anb617, .a324789").css("animation-play-state", "paused")
     $(".circlebuttons, .square, .verticalbar, .inbar, .lever, .spin1img, .spin2img").css("animation-play-state", "paused")
     $(".LOC19, .loc18, .loc17, .loc16, .loc15, .loc14, .loc13").css("animation-play-state", "paused")
-    $("#number21, .number22, .number22, .number23, .number25, .number26, .number27, .number28, .number29").css("animation-play-state", "paused")
+    // $("#number21, .number22, .number23, .number25, .number26, .number27, .number28, .number29").css("animation-play-state", "paused")
 }
 if (count == 2){
   window.location.reload();

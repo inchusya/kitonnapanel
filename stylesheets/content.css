@@ -77,6 +77,7 @@ p{
 
 .kitonnapanel {
   display: grid;
+
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
@@ -95,6 +96,8 @@ p{
 
 
 .weather { grid-area: weather;
+position: relative;
+
 border: 1px solid #ffffff;
 /* height: 100%; */
 height: 77.1vw;
@@ -113,7 +116,9 @@ animation-play-state: paused;
 
 .phone {
   display: grid;
-  height: 18.3vw;
+  position: relative;
+  /*    */
+  height: 100%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 5% 5%;
@@ -147,60 +152,60 @@ animation-play-state: paused;
 
 #callone{
   position: absolute;
-  margin-left: -10%;
+   left: -10%;
 }
 #calltwo{
   position: absolute;
-  margin-left: -3%;
+   left: -3%;
 }
 #callthree{
   position: absolute;
-  margin-left: 3%;
+   left: 3%;
 }
 #callfour{
   position: absolute;
-  margin-left: -10%;
-  margin-top: 4%;
+   left: -10%;
+   top: 4%;
 }
 #callfive{
   position: absolute;
-  margin-left: -3%;
-  margin-top: 4%;
+   left: -3%;
+   top: 4%;
 }
 #callsix{
   position: absolute;
-  margin-left: 3%;
-  margin-top: 4%;
+   left: 3%;
+   top: 4%;
 }
 #callseven{
   position: absolute;
-  margin-left: -9%;
-  margin-top: 10%;
+   left: -9%;
+   top: 10%;
 }
 #calleight{
   position: absolute;
-  margin-left: -3%;
-  margin-top: 10%;
+   left: -3%;
+   top: 10%;
 }
 #callnine{
   position: absolute;
-  margin-left: 4%;
-  margin-top: 10%;
+   left: 4%;
+   top: 10%;
 }
 #callnet{
   position: absolute;
-  margin-left: -9%;
-  margin-top: 14%;
+   left: -9%;
+   top: 14%;
 }
 #callzero{
   position: absolute;
-  margin-left: -3%;
-  margin-top: 14%;
+   left: -3%;
+   top: 14%;
 }
 #callstar{
   position: absolute;
-  margin-left: 4%;
-  margin-top: 14%;
+   left: 4%;
+   top: 14%;
 }
 #callone  .popup {
        position: absolute;
@@ -578,6 +583,8 @@ animation-play-state: paused;
                       }
 
 .map { grid-area: map;
+  position: relative;
+
   border: 1px solid #ffffff;
   height: 18.3vw;
   background-image: url(../img/map.svg);
@@ -598,8 +605,8 @@ animation-play-state: paused;
 
 
 .redcircle{
-  width: 1vw;
-  height: 1vw;
+  width: 2.5%;
+  height: 5%;
   border-radius: 50%;
   background-color: #FF5B01;
   display: inline-block;
@@ -608,8 +615,10 @@ animation-play-state: paused;
 
 
 .course { grid-area: course;
+  position: relative;
+
   border: 1px solid #ffffff;
-  height: 38vw;
+  height: 100%;
   background-image: url(../img/course.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -626,8 +635,8 @@ animation-play-state: paused;
 
 /* .courseimg{
   position: absolute;
-  margin-left:3%;
-  margin-top: 7%;
+   left:3%;
+   top: 7%;
   animation: courseimgend 2s infinite ;
   animation-play-state: paused;
 } */
@@ -635,9 +644,9 @@ animation-play-state: paused;
 
 
 .GSNASA11{
-  position: relative;
-  margin-left: 11%;
-  margin-top: 12%;
+  position: absolute;
+   left: 11%;
+   top: 7%;
   animation: GSNASA11end 20s ease-in-out infinite;
   animation-play-state: paused;
 
@@ -649,9 +658,9 @@ animation-play-state: paused;
   100% {left:80%;  top:-30%; transform:rotate(2deg);}
 }
 .p125{
-  margin-left: 11%;
-  margin-top: 2%;
-  position: relative;
+   left: 11%;
+   top: 11%;
+  position: absolute;
   animation: p125end 20s ease-in-out infinite;
   animation-play-state: paused;
 }
@@ -662,9 +671,9 @@ animation-play-state: paused;
   100% {left:20%;  top:-90%; transform:rotate(-180deg);}
 }
 .LOC19{
-  position: relative;
-  margin-left: 68%;
-  margin-top: 23%;
+  position: absolute;
+   left: 68%;
+   top: 26%;
   animation: LOC19end 9s ease-in-out infinite;
   animation-play-state: paused;
 }
@@ -675,9 +684,9 @@ animation-play-state: paused;
   100% {left:0%;  top:-90%; transform:rotate(-180deg);}
 }
 .loc18{
-  position: relative;
-  margin-left: 38%;
-  margin-top: -11%;
+  position: absolute;
+  left: 41%;
+   top: 28%;
   animation: loc18end 5s ease-in-out infinite;
   animation-play-state: paused;
 }
@@ -689,9 +698,9 @@ animation-play-state: paused;
   100% {left:0%;  top:-90%; transform:rotate(20deg);}
 }
 .loc17{
-  position: relative;
-  margin-left: 23%;
-  margin-top: 1%;
+  position: absolute;
+  left: 23%;
+   top: 36%;;
   animation: loc17end 24s ease-in infinite ;
   animation-play-state: paused;
 }
@@ -702,9 +711,9 @@ animation-play-state: paused;
   100% {left:40%;  top:-90%; transform:rotate(360deg);}
 }
 .loc16{
-  position: relative;
-  margin-left: 36%;
-  margin-top: 1%;
+  position: absolute;
+  left: 43%;
+   top: 42%;
   animation: loc16end 14s ease-in-out infinite ;
   animation-play-state: paused;
 }
@@ -717,9 +726,9 @@ animation-play-state: paused;
 }
 
 .loc15{
-  position: relative;
-  margin-left: 23%;
-  margin-top: 1%;
+  position: absolute;
+  left: 23%;
+   top: 49%;
   animation: loc15end 24s ease-in-out infinite ;
   animation-play-state: paused;
 }
@@ -730,9 +739,9 @@ animation-play-state: paused;
   100% {left:10%;  top:-10%; transform:rotate(0deg);}
 }
 .loc14{
-  position: relative;
-  margin-left: 23%;
-  margin-top: 1%;
+  position: absolute;
+  left: 18%;
+   top: 59%;
   animation: loc14end 24s ease-out infinite ;
   animation-play-state: paused;
 }
@@ -743,9 +752,9 @@ animation-play-state: paused;
   100% {left:0%;  top:-100%; transform:rotate(175deg);}
 }
 .loc13{
-  position: relative;
-  margin-left: 23%;
-  margin-top: 3%;
+  position: absolute;
+  left: 23%;
+top: 70%;
   animation: loc13end 10s ease-out infinite ;
   animation-play-state: paused;
 }
@@ -756,16 +765,16 @@ animation-play-state: paused;
   100% {left:0%;  top:-100%; transform:rotate(-175deg);}
 }
 .Rtt{
-  position: relative;
-  margin-left: 63%;
-  margin-top: 18%;
+  position: absolute;
+  left: 63%;
+   top: 87%;
   animation: number21end 10s ease-in-out infinite;
   animation-play-state: paused;
 }
 .locapp{
-  position: relative;
-  margin-left: 63%;
-  margin-top: 9%;
+  position: absolute;
+  left: 63%;
+   top: 92%;
   animation: locappend 18s ease-in-out infinite;
   animation-play-state: paused;
 }
@@ -776,8 +785,10 @@ animation-play-state: paused;
 }
 
 .screen { grid-area: screen;
+  position: relative;
+
   border: 1px solid #ffffff;
-  height: 38vw;
+  height: 100%;
   animation: screenend 18s ease-in-out infinite;
   animation-play-state: paused;
 }
@@ -796,11 +807,11 @@ animation-play-state: paused;
   background-image: url(../img/screen.svg);
   background-repeat: no-repeat;
   background-position: center;
-  width: 40vw;
-  height: 30vw;
-  position: absolute;
-  top: 22vw;
-  left: 30vw;
+  width: 61%;
+ height: 61%;
+ position: absolute;
+ top: 18%;
+ left: 18%;
   animation: screenimgend 10s ease-in-out infinite ;
   animation-play-state: paused;
 }
@@ -812,32 +823,37 @@ animation-play-state: paused;
     100% {transform:rotate(30deg);}
   }
 .ifs21{
-  margin-left: 16%;
-  margin-top: 2%;
+  position: absolute;
+   left: 16%;
+   top: 2%;
   animation: screenimgend 20s ease-in-out ;
   animation-play-state: paused;
 }
 .vor27{
-  margin-left: 46%;
-  margin-top: -2%;
+  position: absolute;
+  left: 46%;
+   top: 2%;
   animation: number21end 10s ease-in-out infinite;
   animation-play-state: paused;
 }
 .maNgain {
-  margin-left: 80%;
-  margin-top: 6%;
+  position: absolute;
+  left: 81%;
+  top: 2%;
   animation: vozend 5s infinite alternate ease;
   animation-play-state: paused;
 }
 .nADF1034{
-  margin-left: 16%;
-  margin-top: 31%;
+  position: absolute;
+   left: 16%;
+   top: 81%;
   animation: vozend 20s infinite alternate ease;
   animation-play-state: paused;
 }
 .vor2 wrn2{
-  margin-left: 68%;
-  margin-top: -2%;
+  position: absolute;
+   left: 68%;
+   top: 81%;
   animation: locappend 30s ease-in-out infinite;
   animation-play-state: paused;
 }
@@ -845,11 +861,11 @@ animation-play-state: paused;
   background-image: url(../img/triangle.svg);
   background-repeat: no-repeat;
   background-position: center;
-  width: 4vw;
-  height: 4vw;
+  Width: 7%;
+  height: 9%;
   position: absolute;
-  top: 45vw;
-  left: 45vw;
+  top: 80%;
+  left: 45%;
   cursor: grab;
   animation: triangleend 25s ease-in-out infinite;
   animation-play-state: paused;
@@ -861,10 +877,10 @@ animation-play-state: paused;
      100% {transform:  scale(1);}
 }
 
-#number21{
+.number21{
   position: absolute;
-  margin-left: 12%;
-  margin-top: 17%;
+  left: 19%;
+  top: 50%;
   animation: number21end 20s ease-in-out infinite;
   animation-play-state: paused;}
 
@@ -878,10 +894,11 @@ animation-play-state: paused;
 }
 .number22{
   position: absolute;
-  margin-left: 15%;
-  margin-top: 12%;
-  animation: number22end 20s ease-in-out infinite;
-  animation-play-state: paused;
+  top: 38%;
+  left: 24%;
+
+  /* animation: number22end 20s ease-in-out infinite;
+  animation-play-state: paused; */
 }
 @keyframes number22end {
 0% {}
@@ -892,8 +909,8 @@ animation-play-state: paused;
 }
 .number23{
   position: absolute;
-  margin-left: 19%;
-  margin-top: 9%;
+  left: 31%;
+   top: 30%;
   animation: number23end 20s ease-in-out infinite;
   animation-play-state: paused;
 }
@@ -907,8 +924,8 @@ animation-play-state: paused;
 
 .number24{
   position: absolute;
-  margin-left: 24%;
-  margin-top: 7%;
+  left: 39%;
+  top: 25%;
   animation: number24end 20s ease-in-out infinite;
   animation-play-state: paused;
 }
@@ -921,8 +938,8 @@ animation-play-state: paused;
 }
 .number25{
   position: absolute;
-  margin-left: 30%;
-  margin-top: 7%;
+  left: 50%;
+   top: 23%;
   animation: number25end 20s ease-in-out infinite;
   animation-play-state: paused;
 }
@@ -935,8 +952,8 @@ animation-play-state: paused;
 }
 .number26{
   position: absolute;
-  margin-left: 36%;
-  margin-top: 8%;
+  left: 60%;
+  top: 26%;
   animation: number26end 20s ease-in-out infinite;
   animation-play-state: paused;
 }
@@ -949,8 +966,8 @@ animation-play-state: paused;
 }
 .number27{
   position: absolute;
-  margin-left: 41%;
-  margin-top: 11%;
+  left: 68%;
+   top: 35%;
   animation: number27end 20s ease-in-out infinite;
   animation-play-state: paused;
 }
@@ -963,8 +980,8 @@ animation-play-state: paused;
 }
 .number28{
   position: absolute;
-  margin-left: 44%;
-  margin-top: 15%;
+  left: 74%;
+   top: 45%;
   animation: number28end 20s ease-in-out infinite;
   animation-play-state: paused;
 }
@@ -978,8 +995,8 @@ animation-play-state: paused;
 }
 .number29{
   position: absolute;
-  margin-left: 47%;
-  margin-top: 20%;
+  left: 78%;
+  top: 57%;
   animation: number29end 20s ease-in-out infinite;
   animation-play-state: paused;
 }
@@ -993,52 +1010,56 @@ animation-play-state: paused;
 }
 .a5674c7{
   position: absolute;
-  margin-left: 19%;
-  margin-top: 13%;
+  left: 32%;
+  top: 39%;
   animation: number27end 10s linear infinite;
   animation-play-state: paused;
 }
 .a6f7ddc{
   position: absolute;
-  margin-left: 23%;
-  margin-top: 15%;
+  left: 38%;
+  top: 47%;
   animation: vozend 5s infinite alternate ease;
   animation-play-state: paused;
 }
 .anb617{
   position: absolute;
-  margin-left: 26%;
-  margin-top: 19%;
+  left: 42%;
+   top: 59%;
   animation: vozend 30s infinite alternate ease;
   animation-play-state: paused;
 }
 .a324789{
   position: absolute;
-  margin-left: 26%;
-  margin-top: 22%;
+  left: 46%;
+  top: 72%;
   animation: number24end 40s ease-in-out infinite;
   animation-play-state: paused;
 
 }
 
-.screenimg{}
-
 .speed { grid-area: speed;
-  height: 18.3vh;
+  position: relative;
+  height: 100%;
+  width: 45%;
 /* animation: speedimgend2 5s infinite alternate ease;
 animation-play-state: paused; */
 }
 
-.compasimg { grid-area: compas;
-  position: absolute;
-  height: 18.3vw;
+.compas { grid-area: compas;
+  position: relative;
+  height: 90%;
   animation: loc17end 30s ease-in-out infinite;
   animation-play-state: paused;
-} 
+}
+.compasimg{
+  position: absolute;
+  height: 100%;
+}
 .arrowimg{
   position: absolute;
-  margin-left: 5%;
-  margin-top: 3%;
+  left: 26%;
+   top: 17%;
   animation: spin 3s infinite alternate ease-out;
 }
 @keyframes spin {
@@ -1047,8 +1068,10 @@ animation-play-state: paused; */
  }
 .arrowspeedimg{
   position: absolute;
-  margin-left: 7.6%;
-  margin-top: 4%;
+  height: 30%;
+  width: 45%;
+  left: 78%;
+  top: 21%;
   animation: spin2 5s infinite alternate ease;
   transform-origin: center bottom;
 }
@@ -1060,7 +1083,7 @@ animation-play-state: paused; */
 
 .speedimg{
   position: absolute;
-  height: 18.3vw;
+  height: 90%;
   animation: speedimgend 15s infinite alternate ease;
   animation-play-state: paused;
   transform-origin: center bottom;
@@ -1080,34 +1103,36 @@ animation-play-state: paused; */
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
-  left: 10vw;
+  left: 16%;
   width: 47%;
   height: 9%;
-  top: 1.5vw;
+  top: 6%;
 }
 
 .dropbar{
   background-image: url(../img/bartear.svg);
   background-repeat: no-repeat;
   background-position: center;
-  width: 3vw;
-  height: 3vw;
+  background-size: 49.5%;
+    width: 7%;
+    height: 100%;
   position: absolute;
-  top: 0.5vw;
-  animation: speedimgend2 5s infinite alternate ease;
+  top: 40%;
+  /* animation: speedimgend2 5s infinite alternate ease;
   animation-play-state: paused;
   animation: loc17end 10s ease-in-out infinite;
-  animation-play-state: paused;
+  animation-play-state: paused; */
 }
 .dropbar2{
   background-image: url(../img/bartear.svg);
   background-repeat: no-repeat;
   background-position: center;
-  width: 3vw;
-  height: 3vw;
+  background-size: 54%;
+width: 4%;
+height: 13%;
   position: absolute;
-  top: 3vw;
-  left: 3vw;
+  top: 16%;
+  left: 6%;
   cursor: pointer;
   animation: loc13end 10s ease-in-out infinite;
   animation-play-state: paused;
@@ -1116,11 +1141,12 @@ animation-play-state: paused; */
   background-image: url(../img/bartear.svg);
   background-repeat: no-repeat;
   background-position: center;
-  width: 3vw;
-  height: 3vw;
+  background-size: 54%;
+width: 4%;
+height: 13%;
   position: absolute;
-  top: 11vw;
-  left: 3vw;
+  top: 66%;
+  left: 6%;
   cursor: pointer;
   animation: loc15end 20s ease-in-out infinite;
   animation-play-state: paused;
@@ -1134,28 +1160,34 @@ animation-play-state: paused; */
 
 .spin1img{
   position: absolute;
-  width: 12%;
-  left: 1vw;
-  top: 1vw;
+  width: 115%;
+  top: 6%;
+  left: 21%;
+  display: inline-block;
   animation: number22end 20s ease-in-out infinite;
   animation-play-state: paused;
 }
 .spin2img{
   position: absolute;
-  width: 12%;
-  top: 9vw;
-  left: 1vw;
+  width: 115%;
+  top: 56%;
+  left: 21%;
+  display: inline-block;
   animation: number29end 20s ease-in-out infinite;
   animation-play-state: paused;
 }
 
-/* .spin{
-position: relative;
-} */
+.spin{
+position: absolute;
+width: 10%;
+height: 100%;
+display: inline-block;
+}
 .buttons { grid-area: buttons;
   border: 1px solid #ffffff;
-  height: 18.3vw;
+  height: 100%;
   position: relative;
+
   animation: buttonsend 25s infinite alternate ease;
   animation-play-state: paused;
 
@@ -1168,17 +1200,8 @@ position: relative;
 60% {transform:rotate(-100deg);}
 100% { transform:rotate(200deg);}
 }
-.circlemain{
-  position: absolute;
-  left: 9.5vw;
-  top: 8.5vw;
-}
 
-.circlebuttons{
-  width: 30vw;
-  height: 3vw;
-  animation: circlebuttonsend 25s infinite alternate ease;
-  animation-play-state: paused;
+
 
 }
 @keyframes circlebuttonsend {
@@ -1189,16 +1212,66 @@ position: relative;
 }
 
 .circle1img{
-    width: 2vw;
-    height: 2vw;
+    width: 3%;
+    height: 9.3%;
+    position: absolute;
     border-radius: 50%;
     border: 1px solid #ffffff;
     display: inline-block;
-    margin: 1%;
     cursor: pointer;
     animation: circlemainend 18s ease-in-out infinite;
     animation-play-state: paused;
 }
+
+.c1{
+  left: 16%;
+  top: 57%;
+}
+.c2{
+  left: 21%;
+  top: 57%;
+}
+.c3{
+  left: 31%;
+  top: 57%;
+}
+.c4{
+  left: 26%;
+  top: 57%;
+}
+.c5{
+  left: 16%;
+  top: 69.5%;
+}
+.c6{
+  left: 21%;
+  top: 69.5%;
+}
+.c7{
+  left: 26%;
+  top: 69.5%;
+}
+.c8{
+  left: 31%;
+  top: 69.5%;
+}
+.c9{
+  left: 16%;
+  top: 82%;
+}
+.c10{
+  left: 21%;
+  top: 82%;
+}
+.c11{
+  left: 26%;
+  top: 82%;
+}
+.c12{
+  left: 31%;
+  top: 82%;
+}
+
 
 
 .triangle:hover, .inbar:hover {
@@ -1219,24 +1292,45 @@ position: relative;
 
 
 
-.squarebuttons{
-  position: relative;
-  left: 23vw;
-  top: 7vw;
-}
+
 .square{
-  width: 3vw;
-  height: 3vw;
+  width: 4%;
+  height: 12%;
+  position: relative;
   display: inline-block;
-  margin: 2.5% 1% 1% 1%;
   border: 1px solid #ffffff;
   cursor: pointer;
   animation: circlebuttonsend 25s infinite alternate ease;
   animation-play-state: paused;
 }
+.s1{
+  left: 43%;
+    top: 57%;
+}
+.s2{
+  left: 46%;
+top: 57%;
+}
+.s3{
+  left: 49%;
+  top: 57%;
+}
+.s4{
+  left: 29%;
+  top: 79%;
+}
+.s5{
+    left: 32%;
+  top: 79%;
+}
+.s6{
+  left: 35%;
+  top: 79%;
+}
 .bar{
-  width: 1.5vw;
-  height: 15.5vw;
+  width: 10%;
+  height: 90%;
+  position: relative;
   display: inline-block;
   margin: 0.4%;
   border: 1px solid #ffffff;
@@ -1245,9 +1339,10 @@ position: relative;
 }
 .verticalbar{
   position: absolute;
-  left: 38vw;
-  width: 12vw;
-  top: 1.5vw;
+  left: 66%;
+  width: 25%;
+  height: 93%;
+  top: 7%;
   animation: verticalbarend 25s infinite alternate ease;
   animation-play-state: paused;
  }
@@ -1258,7 +1353,7 @@ position: relative;
   100% {transform:rotate(-20deg);}
 }
 .inbar{
-  height: 0.5vw;
+  height: 5%;
   background-color: white;
   cursor: ns-resize;
   animation: inbarend 15s infinite alternate ease;
@@ -1273,12 +1368,12 @@ position: relative;
   100% {opacity: 0%;transform:rotate(-20deg);}
 }
 .lever{
-  width: 10vw;
-  height: 15.5vw;
+  width: 70%;
+  height: 90%;
   position: absolute;
   border: 1px solid #ffffff;
-  left: 8vw;
-  top: 0vw;
+  left: 54%;
+  top: 0%;
   animation: leverend 10s infinite alternate ease;
   animation-play-state: paused;
 }
@@ -1291,22 +1386,22 @@ position: relative;
 .leverimg{
   position: absolute;
   width: 33%;
-  left: 3.5vw;
-  top: 0.7vw;
+  left: 33%;
+  top: 7%;
 }
 .inlever{
-  height: 1.5vw;
-  width: 7vw;
+  height: 10%;
+  width: 80%;
   background-color: white;
   position: absolute;
-  left: 1.5vw;
-  top: 5vw;
+  left: 10%;
+  top: 24%;
   cursor: ns-resize;
 }
 .voz{
-  position: relative;
-  top: -1.3vw;
-  left: 7vw;
+  position: absolute;
+  top: 0%;
+  left: 70%;
   animation: vozend 5s infinite alternate ease;
   animation-play-state: paused;
 }
