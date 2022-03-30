@@ -114,7 +114,7 @@ animation-play-state: paused;
 }
 
 
-.phone {
+.phone { grid-area: phone;
   display: grid;
   position: relative;
   /*    */

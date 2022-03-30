@@ -1,10 +1,6 @@
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 1480px) {
   /* Desktop */
-}
-
-@media only screen and (min-device-width: 1600px) and (max-device-width: 1921px) {
-  /* iPad */
-	.kitonnapanel {
+	 .kitonnapanel {
 	  display: grid;
 
 	  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -19,12 +15,14 @@
 	    "weather buttons buttons buttons compas";
 	    width: 80%;
 	    height: 80%;
-			padding: 2% 25% 2% 20%
-		/* margin-left: 20%;
-			margin-right:  20%; */
-	    /* margin: 2% 20% 2% 20% */
+			padding: 2% 25% 2% 20%;
 
+		}
 	}
+
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1921px) {
+  /*  */
 
 }
 
@@ -34,17 +32,85 @@
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   /* iPad Portrait */
+	.kitonnapanel {
+	 display: grid;
+	 grid-template-columns: 1fr 1fr 1fr;
+	 grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	 grid-auto-columns: 1fr;
+	 gap: 1.4% 2%;
+	 grid-auto-flow: row;
+	 grid-template-areas:
+		 "course map map"
+		 "course weather weather "
+		 "phone weather weather"
+		 "screen screen screen"
+		 "screen screen screen"
+		 "speed empty compas"
+		 "buttons buttons buttons";
+		 width: 90vw;
+		 height: 182vw;
+		 margin: 2vh 2vh 2vh 2vh
+ }
+
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   /* iPad Landscape */
+
+.kitonnapanel {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+ grid-auto-columns: 1fr;
+ gap: 1.4% 2%;
+ grid-auto-flow: row;
+ grid-template-areas:
+	 "course map map"
+	 "course weather weather "
+	 "phone weather weather"
+	 "screen screen screen"
+	 "screen screen screen"
+	 "speed empty compas"
+	 "buttons buttons buttons";
+	 width: 90vw;
+	 height: 182vw;
+	 margin: 2vh 2vh 2vh 2vh
+}
+.course { grid-area: course;
+ height: 55vw;
+}
+.weather { grid-area: weather;
+height: 55vw;
+}
+.phone {grid-area: phone;
+ height: 26vw;
+}
+.screen {grid-area: screen;
+ height: 55vw;
+}
+.screenimg {
+ height: 40vw;
+}
+.map { grid-area: map;
+ height: 26vw;
+}
+.buttons { grid-area: buttons;
+ height: 26vw;
+}
+.speedimg { grid-area: speed;
+ height: 26vw;
+}
+.compas { grid-area: compas;
+ height:26vw;
+}
+.compasimg {
+ height:26vw;
+}
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* iPhone */
-	body {
-	  overflow: hidden;
-	}
+
 	 .kitonnapanel {
 	  display: grid;
 	  grid-template-columns: 1fr 1fr 1fr;
