@@ -150,10 +150,10 @@
 	 margin: 2vh 2vh 2vh 2vh
 }
 .course { grid-area: course;
- height: 55vw;
+ height: 100%;
 }
 .weather { grid-area: weather;
-height: 55vw;
+height: 100%;
 }
 .phone {grid-area: phone;
  height: 100%;
@@ -162,22 +162,22 @@ height: 55vw;
  height: 55vw;
 }
 .screenimg {
- height: 40vw;
+ height: 100%;
 }
 .map { grid-area: map;
- height: 26vw;
+ height: 100%;
 }
 .buttons { grid-area: buttons;
- height: 26vw;
+ height: 100%;
 }
 .speedimg { grid-area: speed;
- height: 26vw;
+ height: 100%;
 }
 .compas { grid-area: compas;
- height:26vw;
+height: 100%;
 }
 .compasimg {
- height:26vw;
+height: 100%;
 }
 .circle1img{
 		width: 2.8%;
