@@ -193,6 +193,23 @@ font-size: 50%;
 	.phonetext{
     font-size: 100%;
   }
+	.screenimg{
+
+	  width: 61%;
+	 height: 61%;
+	   background-size: 100%;
+	}
+	.triangle{
+background-size: 100%;
+	  Width: 7%;
+	  height: 9%;
+	}
+	.arrowimg{
+height: 9%;
+	  left: 31%;
+	   top: 22%;
+
+	}
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
