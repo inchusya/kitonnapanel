@@ -4,11 +4,14 @@ setTimeout(function(){
 },50000);
 });
 
+
 $(document).ready(function(){
 setTimeout(function(){
   $(".alarm2").css("display","block");
 },30000);
 });
+/* появление плашки */
+
 
 $(function () {
 let count = 0;
@@ -19,7 +22,7 @@ $(".alarm2, .alarmtext2").css("display", "none");
 }
 });
 });
-
+/* удаление плашки */
 
 
 
@@ -31,17 +34,16 @@ $(".s1, .s2, .s3, .s4, .s5, .s6, .circle1img ").click(function(){
 $(this).toggleClass("white")
 });
 });
-
+/* кнопки */
 
 $( function() {
     $( ".triangle" ).draggable({containment: "parent"});
     $( ".inlever, .inbar" ).draggable({ axis: "y", containment: "parent"});
     $( ".dropbar" ).draggable({ axis: "x", containment: "parent"});
   } );
+/* рычаги */
 
-
-
-
+/* поворот крутилки */
 var num1 = 0;
 
 $(function(){
@@ -67,6 +69,7 @@ $(this).css("-ms-transform", str);
 });
 });
 
+/* текст зависит от курсора */
 let xPrev = 0;
     jQuery(document).ready(function(){
 
@@ -78,10 +81,6 @@ let xPrev = 0;
           $(".anb617").html(e.pageX +', '+ e.pageY);
        });
     })
-
-
-
-
 
 
     $(document).mousemove(function(e) {
@@ -97,7 +96,6 @@ let xPrev = 0;
     $(".a6f7ddc").html(left_dir);
 
 
-
      if (left_dir > half_body_size_x && top_dir > half_body_size_y) {
        $(".vor27, .loc18, .loc14").css("color", "#7591FF");
      } else if (left_dir < half_body_size_x && top_dir < half_body_size_y) {
@@ -138,7 +136,7 @@ let xPrev = 0;
      }
 });
 
-
+/* текст считает */
 $(function () {
 $({ n: 0 }).animate({n: 1E3 }, {
 duration: 50E3,
@@ -149,7 +147,7 @@ $(".a324789").html(a | 0)
 });
 
 
-
+/* бегущая строка погоды */
 var i = 0;
 var txt = "Солнце и Луна Вт, 1 фев, сегодня Долгота дня: 8 ч 39 мин Восход — 8:23 Заход — 17:03 Сегодня день на 4 минуты длиннее, чем вчера Луна стареющая, 0% Восход — 9:14 Заход — 15:19 Полнолуние — 16 февраля, через 16 дней Вт, 15 фев, сегодня   Ср, 16 Долгота дня: 9 ч 39 мин Восход — 7:54 Заход — 17:33 Сегодня день на 5 минут длиннее, чем вчера Луна растущая, 98% Восход — 14:17 Заход — 8:09 Ветер, м/с Вт, 15 фев, сегодня 000 Ю 300 Ю 600 ЮЮ 900 ЮЗ 1200 СЗ З З ЮЗ ЮЗ ЮЗ Вт, 22 мар, сегодня Ср, 23 Долгота дня: 12 ч 19 мин Восход — 6:27 Заход — 18:46 Сегодня день на 4 минуты длиннее, чем вчера Луна стареющая, 81% Восход — 23:11 Заход — 7:52 Полнолуние — 16 апреля, через 26 дней ебольшие возмущения 5 Слабая буря 6 Умеренная буря 7 Сильная буря 8 Шторм 9 Экстремальный шторм Вт, 22 мар 18:00 Вт, 22 мар 21:00 Ср, 23 мар 0:00 Ср, 23 мар 3:00 Ср, 23 мар 6:00 Ср, 23 мар 9:00 Ср, 23 мар 12:00 Ср, 23 мар 15:00 Ср, 23 мар 18:00 Ср, 23 мар 21:00 Чт, 24 мар 0:00 Чт, 24 мар 3:00 Чт, 24 мар 6:00 Чт, 24 мар 9:00 Чт, 24 мар 12:00 "
 var speed = 110;
@@ -163,6 +161,7 @@ $(document).ready(function typeWriter() {
 });
 });
 
+/* телефонные кнопки всплывают */
 var str = ""
 
 $(document).ready(function() {
@@ -177,10 +176,6 @@ $(document).ready(function() {
 });
 
 
-
-
-
-
 $(document).ready(function() {
 	$(".two").click( function () {
     str += "2"
@@ -189,7 +184,7 @@ $(document).ready(function() {
     setTimeout( function() { rez1.remove(); }, 500);
   });
 });
-
+/* запуск шторма */
 $(document).ready(function() {
 	$(".three").click( function () {
     str += "3"
@@ -199,14 +194,13 @@ $(document).ready(function() {
 
     var str1 = (str[str.length - 3] + str[str.length - 2] + str[str.length - 1]).toString()
     if (str1.includes("1") && str1.includes("4") && str1.includes("3")) {
-      // alert("Код исправен")
+
       $("p, body, .screenimg, .voz, .speedimg, .triangle, .dropbar, .bar, .GSNASA11, .dropbar, .dropbar2, .dropbar3, .alarm, .alarm2 .alarmtext, .alarmtext2").css("animation-play-state", "running")
       $(".weather, .phone, .map, .course, .screen, .compasimg, .buttons").css("animation-play-state", "running")
       $(".one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .net, .zero, .star").css("animation-play-state", "running")
       $(".p125, .a5674c7, .a6f7ddc, .anb617, .a324789").css("animation-play-state", "running")
       $(".circlebuttons, .square, .verticalbar, .inbar, .lever, .spin1img, .spin2img").css("animation-play-state", "running")
       $(".LOC19, .loc18, .loc17, .loc16, .loc15, .loc14, .loc13").css("animation-play-state", "running")
-      // $("#number21, .number22, .number23, .number25, .number26, .number27, .number28, .number29").css("animation-play-state", "running")
 
     }
   });
@@ -268,9 +262,7 @@ $(document).ready(function() {
   });
 });
 
-
-
-
+ 
 $(document).ready(function() {
 	$(".net").click( function () {
     str += "#"
@@ -286,8 +278,6 @@ $(document).ready(function() {
     let rez12 = $('<div class="popup12">0 </div>');
     $("#callzero").append(rez12);
     setTimeout( function() { rez12.remove(); }, 500);
-
-
   });
 });
 
@@ -303,7 +293,7 @@ $(document).ready(function() {
 
 
 
-
+/* остановка шторма */
 
 $(function () {
 let count = 0;
@@ -317,7 +307,7 @@ if (count == 1) {
     $(".p125, .a5674c7, .a6f7ddc, .anb617, .a324789").css("animation-play-state", "paused")
     $(".circlebuttons, .square, .verticalbar, .inbar, .lever, .spin1img, .spin2img").css("animation-play-state", "paused")
     $(".LOC19, .loc18, .loc17, .loc16, .loc15, .loc14, .loc13").css("animation-play-state", "paused")
-    // $("#number21, .number22, .number23, .number25, .number26, .number27, .number28, .number29").css("animation-play-state", "paused")
+
 }
 if (count == 2){
   window.location.reload();

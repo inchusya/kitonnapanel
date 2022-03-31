@@ -20,8 +20,8 @@ p{
     text-transform: uppercase;
     animation: pEND 2s linear infinite;
     animation-play-state: paused;
-
   }
+
   @keyframes pEND {
     0% {color: #ffffff;}
     50% {color: #001EFF;}
@@ -44,10 +44,10 @@ p{
     position: absolute;
     width: 100%;
     z-index: 1;
-  background-color:  #FF5B01;
-  cursor: pointer;
-  animation: alarmend 10s ease-in-out infinite;
-  animation-play-state: paused;
+    background-color:  #FF5B01;
+    cursor: pointer;
+    animation: alarmend 10s ease-in-out infinite;
+    animation-play-state: paused;
   }
 
   @keyframes alarmend {
@@ -61,15 +61,7 @@ p{
   .t143{
     color:#002EAB;
   }
-  /* .alarmtext, .alarmtext2{
-    font-size: 22px;
-    padding-left: 1vw;
-    padding-right: 1vw;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
-    animation: alarmtextend 15s ease-in-out infinite;
-    animation-play-state: paused;
-  } */
+
   @keyframes alarmtextend {
   0% {}
   25% {color: #FF5B01; transform:rotate(20deg);}
@@ -79,7 +71,6 @@ p{
 
 .kitonnapanel {
   display: grid;
-
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
@@ -93,16 +84,12 @@ p{
     width: 100%;
     height: 100%;
     margin: 1% 1% 1% 1%;
-
 }
 
 
 .weather { grid-area: weather;
 position: relative;
-
 border: 1px solid #ffffff;
-/* height: 100%; */
-/* height: 77.1vw; */
 animation: weatherend 15s infinite alternate ease;
 animation-play-state: paused;
 }
@@ -139,11 +126,13 @@ animation-play-state: paused;
 80% {transform:rotate(120deg);}
 100% { transform:rotate(100deg);}
 }
+
 .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .net, .zero, .star   {
   border: 1px solid #ffffff;
   animation: phoneend2 25s infinite alternate ease;
   animation-play-state: paused;
 }
+
 @keyframes phoneend2 {
 0% {}
 25% {transform:rotate(20deg);}
@@ -585,7 +574,6 @@ animation-play-state: paused;
 
 .map { grid-area: map;
   position: relative;
-
   border: 1px solid #ffffff;
   height: 18.3vw;
   background-image: url(../img/map.svg);
@@ -606,18 +594,19 @@ animation-play-state: paused;
 
 
 .redcircle{
+  position: absolute;
+  top: 10%;
+  left: 10%;
   width: 2.5%;
   height: 5%;
   border-radius: 50%;
   background-color: #FF5B01;
-  display: inline-block;
-  margin: 1%;
+
 }
 
 
 .course { grid-area: course;
   position: relative;
-
   border: 1px solid #ffffff;
   height: 100%;
   background-image: url(../img/course.svg);
@@ -640,25 +629,27 @@ animation-play-state: paused;
 
 .GSNASA11{
   position: absolute;
-   left: 11%;
-   top: 7%;
+  left: 11%;
+  top: 7%;
   animation: GSNASA11end 20s ease-in-out infinite;
   animation-play-state: paused;
-
 }
+
 @keyframes GSNASA11end {
   0% {}
   25% {left:-80%;  top:-20%;}
   50% {left:-2%;  top:-90%; transform:rotate(150deg);}
   100% {left:80%;  top:-30%; transform:rotate(2deg);}
 }
+
 .p125{
-   left: 11%;
-   top: 11%;
+  left: 11%;
+  top: 11%;
   position: absolute;
   animation: p125end 20s ease-in-out infinite;
   animation-play-state: paused;
 }
+
 @keyframes p125end {
   0% {}
   25% {left:-30%;  top:-4%; transform:rotate(30deg)}
@@ -667,11 +658,12 @@ animation-play-state: paused;
 }
 .LOC19{
   position: absolute;
-   left: 68%;
-   top: 26%;
+  left: 68%;
+  top: 26%;
   animation: LOC19end 9s ease-in-out infinite;
   animation-play-state: paused;
 }
+
 @keyframes LOC19end {
   0% {}
   25% {left:-3%;  top:-90%; transform:rotate(30deg)}
@@ -681,10 +673,11 @@ animation-play-state: paused;
 .loc18{
   position: absolute;
   left: 41%;
-   top: 28%;
+  top: 28%;
   animation: loc18end 5s ease-in-out infinite;
   animation-play-state: paused;
 }
+
 @keyframes loc18end {
   0% {}
   25% {left:-3%;  top:0%; transform:rotate(30deg)}
@@ -692,26 +685,30 @@ animation-play-state: paused;
   60% {left:0%;  top:19%; transform:rotate(-100deg)}
   100% {left:0%;  top:-90%; transform:rotate(20deg);}
 }
+
 .loc17{
   position: absolute;
   left: 23%;
-   top: 36%;;
+  top: 36%;;
   animation: loc17end 24s ease-in infinite ;
   animation-play-state: paused;
 }
+
 @keyframes loc17end {
   0% {}
   25% {left:-3%;  top:0%; transform:rotate(-100deg)}
   50% {left:-99%;  top:-89%; transform:rotate(4deg)}
   100% {left:40%;  top:-90%; transform:rotate(360deg);}
 }
+
 .loc16{
   position: absolute;
   left: 43%;
-   top: 42%;
+  top: 42%;
   animation: loc16end 14s ease-in-out infinite ;
   animation-play-state: paused;
 }
+
 @keyframes loc16end {
   0% {}
   15% {left:-3%;  top:0%; transform:rotate(-100deg)}
@@ -723,56 +720,63 @@ animation-play-state: paused;
 .loc15{
   position: absolute;
   left: 23%;
-   top: 49%;
+  top: 49%;
   animation: loc15end 24s ease-in-out infinite ;
   animation-play-state: paused;
 }
+
 @keyframes loc15end {
   0% {}
   25% {left:34%;  top:25%; transform:rotate(-10deg)}
   50% {left:-4%;  top:-44%; transform:rotate(20deg)}
   100% {left:10%;  top:-10%; transform:rotate(0deg);}
 }
+
 .loc14{
   position: absolute;
   left: 18%;
-   top: 59%;
+  top: 59%;
   animation: loc14end 24s ease-out infinite ;
   animation-play-state: paused;
 }
+
 @keyframes loc14end {
   0% {}
   25% {left:76%;  top:5%; transform:rotate(10deg)}
   50% {left:-40%;  top:-44%; transform:rotate(-200deg)}
   100% {left:0%;  top:-100%; transform:rotate(175deg);}
 }
+
 .loc13{
   position: absolute;
   left: 23%;
-top: 70%;
+  top: 70%;
   animation: loc13end 10s ease-out infinite ;
   animation-play-state: paused;
 }
+
 @keyframes loc13end {
   0% {}
   15% {left:76%;  top:5%; transform:rotate(-90deg)}
   70% {left:-40%;  top:-44%; transform:rotate(70deg)}
   100% {left:0%;  top:-100%; transform:rotate(-175deg);}
 }
+
 .Rtt{
   position: absolute;
   left: 63%;
-   top: 87%;
+  top: 87%;
   animation: number21end 10s ease-in-out infinite;
   animation-play-state: paused;
 }
 .locapp{
   position: absolute;
   left: 63%;
-   top: 92%;
+  top: 92%;
   animation: locappend 18s ease-in-out infinite;
   animation-play-state: paused;
 }
+
 @keyframes locappend {
   0% {}
   70% {left:10%;  top:-4%; transform:rotate(70deg)}
@@ -781,12 +785,12 @@ top: 70%;
 
 .screen { grid-area: screen;
   position: relative;
-
   border: 1px solid #ffffff;
   height: 100%;
   animation: screenend 18s ease-in-out infinite;
   animation-play-state: paused;
 }
+
 @keyframes screenend {
   0% {}
   20% {border-color:#001EFF; }
@@ -803,13 +807,14 @@ top: 70%;
   background-repeat: no-repeat;
   background-position: center;
   width: 61%;
- height: 61%;
- position: absolute;
- top: 18%;
- left: 18%;
+  height: 61%;
+  position: absolute;
+  top: 18%;
+  left: 18%;
   animation: screenimgend 10s ease-in-out infinite ;
   animation-play-state: paused;
 }
+
 @keyframes screenimgend {
     0% {}
     25% {left:-10%;  top:-20%;}
@@ -817,20 +822,23 @@ top: 70%;
     90% {left:40%;  top:-60%; transform:rotate(700deg);}
     100% {transform:rotate(30deg);}
   }
+
 .ifs21{
   position: absolute;
-   left: 16%;
-   top: 2%;
+  left: 16%;
+  top: 2%;
   animation: screenimgend 20s ease-in-out ;
   animation-play-state: paused;
 }
+
 .vor27{
   position: absolute;
   left: 46%;
-   top: 2%;
+  top: 2%;
   animation: number21end 10s ease-in-out infinite;
   animation-play-state: paused;
 }
+
 .maNgain {
   position: absolute;
   left: 81%;
@@ -838,6 +846,7 @@ top: 70%;
   animation: vozend 5s infinite alternate ease;
   animation-play-state: paused;
 }
+
 .nADF1034{
   position: absolute;
    left: 16%;
@@ -845,13 +854,15 @@ top: 70%;
   animation: vozend 20s infinite alternate ease;
   animation-play-state: paused;
 }
+
 .vor2 wrn2{
   position: absolute;
-   left: 68%;
-   top: 81%;
+  left: 68%;
+  top: 81%;
   animation: locappend 30s ease-in-out infinite;
   animation-play-state: paused;
 }
+
 .triangle{
   background-image: url(../img/triangle.svg);
   background-repeat: no-repeat;
@@ -859,6 +870,7 @@ top: 70%;
   Width: 7%;
   height: 9%;
   position: absolute;
+  background-size: 90%;
   top: 80%;
   left: 45%;
   cursor: grab;
@@ -870,14 +882,15 @@ top: 70%;
      0% {transform:  scale(1);}
      50% {transform:  scale(10);}
      100% {transform:  scale(1);}
-}
+  }
 
 .number21{
   position: absolute;
   left: 19%;
   top: 50%;
   animation: number21end 20s ease-in-out infinite;
-  animation-play-state: paused;}
+  animation-play-state: paused;
+}
 
 
 @keyframes number21end {
@@ -887,14 +900,15 @@ top: 70%;
   50% {color: #001EFF;left:5%;  top:100%; transform:rotate(50deg);}
   100% { color: #ffffff;left:60%;  top:50%; transform:rotate(350deg);}
 }
+
 .number22{
   position: absolute;
   top: 38%;
   left: 24%;
-
-  /* animation: number22end 20s ease-in-out infinite;
-  animation-play-state: paused; */
+  animation: number22end 20s ease-in-out infinite;
+  animation-play-state: paused;
 }
+
 @keyframes number22end {
 0% {}
 5% {color: #ffffff; left:40%;  top:8%;}
@@ -902,13 +916,15 @@ top: 70%;
 50% {color: #001EFF;left:5%;  top:100%; transform:rotate(80deg);}
 100% { color: #ffffff;left:60%;  top:50%; transform:rotate(150deg);}
 }
+
 .number23{
   position: absolute;
   left: 31%;
-   top: 30%;
+  top: 30%;
   animation: number23end 20s ease-in-out infinite;
   animation-play-state: paused;
 }
+
 @keyframes number23end {
 0% {}
 5% {color: #ffffff; left:20%;  top:10%;}
@@ -924,6 +940,7 @@ top: 70%;
   animation: number24end 20s ease-in-out infinite;
   animation-play-state: paused;
 }
+
 @keyframes number24end {
 0% {}
 10% {color: #ffffff; left:20%;  top:10%;}
@@ -931,13 +948,15 @@ top: 70%;
 80% {color: #001EFF;left:50%;  top:100%; transform:rotate(-20deg);}
 100% { color: #ffffff;left:-60%;  top:-20%; transform:rotate(100deg);}
 }
+
 .number25{
   position: absolute;
   left: 50%;
-   top: 23%;
+  top: 23%;
   animation: number25end 20s ease-in-out infinite;
   animation-play-state: paused;
 }
+
 @keyframes number25end {
 0% {}
 5% {color: #ffffff; left:-20%;  top:0%;}
@@ -945,6 +964,7 @@ top: 70%;
 55% {color: #001EFF;left:50%;  top:10%; transform:rotate(0deg);}
 100% { color: #ffffff;left:0%;  top:-20%; transform:rotate(-100deg);}
 }
+
 .number26{
   position: absolute;
   left: 60%;
@@ -952,6 +972,7 @@ top: 70%;
   animation: number26end 20s ease-in-out infinite;
   animation-play-state: paused;
 }
+
 @keyframes number26end {
 0% {}
 25% {color: #ffffff; left:-60%;  top:60%;}
@@ -959,6 +980,7 @@ top: 70%;
 50% {color: #001EFF;left:50%;  top:70%; transform:rotate(16deg);}
 100% { color: #ffffff;left:4%;  top:-20%; transform:rotate(0deg);}
 }
+
 .number27{
   position: absolute;
   left: 68%;
@@ -966,6 +988,7 @@ top: 70%;
   animation: number27end 20s ease-in-out infinite;
   animation-play-state: paused;
 }
+
 @keyframes number27end {
 0% {}
 5% {color: #ffffff; left:-60%;  top:60%;}
@@ -973,6 +996,7 @@ top: 70%;
 50% {color: #001EFF;left:50%;  top:70%; transform:rotate(16deg);}
 100% { color: #ffffff;left:4%;  top:-20%; transform:rotate(0deg);}
 }
+
 .number28{
   position: absolute;
   left: 74%;
@@ -980,6 +1004,7 @@ top: 70%;
   animation: number28end 20s ease-in-out infinite;
   animation-play-state: paused;
 }
+
 @keyframes number28end {
 0% {}
 18% {color: #ffffff; left:-6%;  top:6%;}
@@ -988,6 +1013,7 @@ top: 70%;
 70% {color: #001EFF;left:40%;  top:-4%; transform:rotate(-16deg);}
 100% { color: #ffffff;left:4%;  top:-20%; transform:rotate(10deg);}
 }
+
 .number29{
   position: absolute;
   left: 78%;
@@ -995,6 +1021,7 @@ top: 70%;
   animation: number29end 20s ease-in-out infinite;
   animation-play-state: paused;
 }
+
 @keyframes number29end {
 0% {}
 25% {color: #ffffff; left:-6%;  top:6%;}
@@ -1003,6 +1030,7 @@ top: 70%;
 70% {color: #001EFF;left:20%;  top:-45%; transform:rotate(-10deg);}
 100% { color: #ffffff;left:4%;  top:-2%; transform:rotate(100deg);}
 }
+
 .a5674c7{
   position: absolute;
   left: 32%;
@@ -1010,6 +1038,7 @@ top: 70%;
   animation: number27end 10s linear infinite;
   animation-play-state: paused;
 }
+
 .a6f7ddc{
   position: absolute;
   left: 38%;
@@ -1017,10 +1046,11 @@ top: 70%;
   animation: vozend 5s infinite alternate ease;
   animation-play-state: paused;
 }
+
 .anb617{
   position: absolute;
   left: 42%;
-   top: 59%;
+  top: 59%;
   animation: vozend 30s infinite alternate ease;
   animation-play-state: paused;
 }
@@ -1030,15 +1060,12 @@ top: 70%;
   top: 72%;
   animation: number24end 40s ease-in-out infinite;
   animation-play-state: paused;
-
 }
 
 .speed { grid-area: speed;
   position: relative;
   height: 100%;
   width: 45%;
-/* animation: speedimgend2 5s infinite alternate ease;
-animation-play-state: paused; */
 }
 
 .compas { grid-area: compas;
@@ -1047,20 +1074,24 @@ animation-play-state: paused; */
   animation: loc17end 30s ease-in-out infinite;
   animation-play-state: paused;
 }
+
 .compasimg{
   position: absolute;
   height: 100%;
 }
+
 .arrowimg{
   position: absolute;
   left: 31%;
-   top: 22%;
+  top: 22%;
   animation: spin 3s infinite alternate ease-out;
 }
+
 @keyframes spin {
    0% {transform:  rotate(0) scale(1);}
    100% {transform:  rotate(360deg) scale(0.9);}
  }
+
 .arrowspeedimg{
   position: absolute;
   height: 30%;
@@ -1072,8 +1103,8 @@ animation-play-state: paused; */
 }
 
 @keyframes spin2 {
- 0% {transform:  rotate(130deg);}
-   100% {transform:  rotate(-180deg);}
+  0% {transform:  rotate(130deg);}
+  100% {transform:  rotate(-180deg);}
 }
 
 .speedimg{
@@ -1109,22 +1140,23 @@ animation-play-state: paused; */
   background-repeat: no-repeat;
   background-position: center;
   background-size: 49.5%;
-    width: 7%;
-    height: 100%;
+  width: 7%;
+  height: 100%;
   position: absolute;
   top: 40%;
-  /* animation: speedimgend2 5s infinite alternate ease;
+  animation: speedimgend2 5s infinite alternate ease;
   animation-play-state: paused;
   animation: loc17end 10s ease-in-out infinite;
-  animation-play-state: paused; */
+  animation-play-state: paused;
 }
+
 .dropbar2{
   background-image: url(../img/bartear.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 52%;
-width: 4%;
-height: 13%;
+  width: 4%;
+  height: 13%;
   position: absolute;
   top: 18%;
   left: 6%;
@@ -1132,13 +1164,14 @@ height: 13%;
   animation: loc13end 10s ease-in-out infinite;
   animation-play-state: paused;
 }
+
 .dropbar3{
   background-image: url(../img/bartear.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 52%;
-width: 4%;
-height: 13%;
+  width: 4%;
+  height: 13%;
   position: absolute;
   top: 68%;
   left: 6%;
@@ -1146,8 +1179,6 @@ height: 13%;
   animation: loc15end 20s ease-in-out infinite;
   animation-play-state: paused;
 }
-
-
 
 .spin1img{
   position: absolute;
@@ -1158,6 +1189,7 @@ height: 13%;
   animation: number22end 20s ease-in-out infinite;
   animation-play-state: paused;
 }
+
 .spin2img{
   position: absolute;
   width: 115%;
@@ -1174,14 +1206,13 @@ width: 10%;
 height: 100%;
 display: inline-block;
 }
+
 .buttons { grid-area: buttons;
   border: 1px solid #ffffff;
   height: 100%;
   position: relative;
-
   animation: buttonsend 25s infinite alternate ease;
   animation-play-state: paused;
-
 }
 
 @keyframes buttonsend {
@@ -1192,14 +1223,12 @@ display: inline-block;
 100% { transform:rotate(200deg);}
 }
 
-
-
 }
 @keyframes circlebuttonsend {
-  0% {}
-  15% { transform:rotate(10deg);}
-  70% {transform:rotate(-180deg);}
-  100% { transform:rotate(-20deg);}
+0% {}
+15% { transform:rotate(10deg);}
+70% {transform:rotate(-180deg);}
+100% { transform:rotate(-20deg);}
 }
 
 .circle1img{
@@ -1281,7 +1310,6 @@ display: inline-block;
 
 
 
-
 .square{
   width: 4%;
   height: 14%;
@@ -1292,31 +1320,38 @@ display: inline-block;
   animation: circlebuttonsend 25s infinite alternate ease;
   animation-play-state: paused;
 }
-.s1{
 
+
+.s1{
   left: 41%;
-    top: 57%;
+  top: 57%;
 }
+
 .s2{
   left: 49%;
-top: 57%;
+  top: 57%;
 }
+
 .s3{
   left: 57%;
   top: 57%;
 }
+
 .s4{
   left: 41%;
   top: 79%;
 }
+
 .s5{
   left: 49%;
   top: 79%;
 }
+
 .s6{
-    left: 57%;
+  left: 57%;
   top: 79%;
 }
+
 .bar{
   width: 10%;
   height: 90%;
@@ -1327,6 +1362,7 @@ top: 57%;
   animation: speedimgend2 5s infinite alternate ease;
   animation-play-state: paused;
 }
+
 .verticalbar{
   position: absolute;
   left: 66%;
@@ -1336,12 +1372,14 @@ top: 57%;
   animation: verticalbarend 25s infinite alternate ease;
   animation-play-state: paused;
  }
+
 @keyframes verticalbarend {
   0% {}
   25% { transform:rotate(10deg);}
   50% {transform:rotate(-180deg);}
   100% {transform:rotate(-20deg);}
 }
+
 .inbar{
   height: 5%;
   background-color: white;
@@ -1349,6 +1387,7 @@ top: 57%;
   animation: inbarend 15s infinite alternate ease;
   animation-play-state: paused;
 }
+
 @keyframes inbarend {
   0% {}
   30% {opacity: 0%; transform:rotate(100deg);}
@@ -1357,6 +1396,7 @@ top: 57%;
   70% {opacity: 100%;transform:rotate(-60deg);}
   100% {opacity: 0%;transform:rotate(-20deg);}
 }
+
 .lever{
   width: 70%;
   height: 90%;
@@ -1367,12 +1407,14 @@ top: 57%;
   animation: leverend 10s infinite alternate ease;
   animation-play-state: paused;
 }
+
 @keyframes leverend {
   0% {}
   5% {opacity: 0%; transform:rotate(40deg);}
   40% {opacity: 100%;transform:rotate(-60deg);}
   100% {opacity: 0%;transform:rotate(-100deg);}
 }
+
 .leverimg{
   position: absolute;
   width: 31%;
@@ -1380,6 +1422,7 @@ top: 57%;
   left: 33%;
   top: 7%;
 }
+
 .inlever{
   height: 10%;
   width: 80%;
@@ -1389,6 +1432,7 @@ top: 57%;
   top: 24%;
   cursor: ns-resize;
 }
+
 .voz{
   position: absolute;
   top: 0%;
@@ -1396,10 +1440,12 @@ top: 57%;
   animation: vozend 5s infinite alternate ease;
   animation-play-state: paused;
 }
+
 @keyframes vozend {
  0% {transform:  rotate(0deg);}
-   100% {transform:  rotate(-180deg);}
+100% {transform:  rotate(-180deg);}
 }
+
 .white{
   background-color: white;
 }
