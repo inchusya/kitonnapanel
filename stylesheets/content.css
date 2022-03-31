@@ -42,6 +42,7 @@ p{
   .alarm, .alarm2{
     display: none;
     position: absolute;
+    width: 100%;
     z-index: 1;
   background-color:  #FF5B01;
   cursor: pointer;
@@ -152,60 +153,60 @@ animation-play-state: paused;
 
 #callone{
   position: absolute;
-   left: -10%;
+   left: -50%;
 }
 #calltwo{
   position: absolute;
-   left: -3%;
+   left: -15%;
 }
 #callthree{
   position: absolute;
-   left: 3%;
+   left: 20%;
 }
 #callfour{
   position: absolute;
-   left: -10%;
-   top: 4%;
+   left: -50%;
+   top: 28%;
 }
 #callfive{
   position: absolute;
-   left: -3%;
-   top: 4%;
+    left: -15%;
+   top: 28%;
 }
 #callsix{
   position: absolute;
-   left: 3%;
-   top: 4%;
+  left: 20%;
+   top: 28%;
 }
 #callseven{
   position: absolute;
-   left: -9%;
-   top: 10%;
+  left: -50%;
+   top: 53%;
 }
 #calleight{
   position: absolute;
-   left: -3%;
-   top: 10%;
+   left: -15%;
+   top: 53%;
 }
 #callnine{
   position: absolute;
    left: 4%;
-   top: 10%;
+   top: 53%;
 }
 #callnet{
   position: absolute;
-   left: -9%;
-   top: 14%;
+  left: -50%;
+  top: 80%;
 }
 #callzero{
   position: absolute;
-   left: -3%;
-   top: 14%;
+   left: -15%;
+   top: 80%;
 }
 #callstar{
   position: absolute;
-   left: 4%;
-   top: 14%;
+   left: 20%;
+    top: 80%;
 }
 #callone  .popup {
        position: absolute;
@@ -622,6 +623,7 @@ animation-play-state: paused;
   background-image: url(../img/course.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 77%;
   animation: courseend 25s infinite alternate ease;
   animation-play-state: paused;
 }
@@ -633,13 +635,6 @@ animation-play-state: paused;
 100% { transform:rotate(-240deg);}
 }
 
-/* .courseimg{
-  position: absolute;
-   left:3%;
-   top: 7%;
-  animation: courseimgend 2s infinite ;
-  animation-play-state: paused;
-} */
 
 
 
@@ -1127,11 +1122,11 @@ animation-play-state: paused; */
   background-image: url(../img/bartear.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 54%;
+  background-size: 52%;
 width: 4%;
 height: 13%;
   position: absolute;
-  top: 16%;
+  top: 18%;
   left: 6%;
   cursor: pointer;
   animation: loc13end 10s ease-in-out infinite;
@@ -1141,22 +1136,18 @@ height: 13%;
   background-image: url(../img/bartear.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 54%;
+  background-size: 52%;
 width: 4%;
 height: 13%;
   position: absolute;
-  top: 66%;
+  top: 68%;
   left: 6%;
   cursor: pointer;
   animation: loc15end 20s ease-in-out infinite;
   animation-play-state: paused;
 }
 
-/* .gospin{
-   transform: rotate(30deg);
-   -webkit-transform: rotate(30deg);
-   -ms-transform: rotate(30deg);
- } */
+
 
 .spin1img{
   position: absolute;
@@ -1278,9 +1269,7 @@ display: inline-block;
    transform: scale(1.2);
  }
 
-.dropbar2:hover, .dropbar3:hover {
-  transform: scale(1.6);
-}
+
 
  .circle1img:hover, .square:hover {
       background-color: #7591FF;
@@ -1295,8 +1284,8 @@ display: inline-block;
 
 .square{
   width: 4%;
-  height: 12%;
-  position: relative;
+  height: 14%;
+  position: absolute;
   display: inline-block;
   border: 1px solid #ffffff;
   cursor: pointer;
@@ -1304,27 +1293,28 @@ display: inline-block;
   animation-play-state: paused;
 }
 .s1{
-  left: 43%;
+
+  left: 41%;
     top: 57%;
 }
 .s2{
-  left: 46%;
+  left: 49%;
 top: 57%;
 }
 .s3{
-  left: 49%;
+  left: 57%;
   top: 57%;
 }
 .s4{
-  left: 29%;
+  left: 41%;
   top: 79%;
 }
 .s5{
-    left: 32%;
+  left: 49%;
   top: 79%;
 }
 .s6{
-  left: 35%;
+    left: 57%;
   top: 79%;
 }
 .bar{
