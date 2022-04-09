@@ -1096,7 +1096,7 @@ animation-play-state: paused;
   position: absolute;
   height: 30%;
   width: 45%;
-  left: 78%;
+  left: 68%;
   top: 21%;
   animation: spin2 5s infinite alternate ease;
   transform-origin: center bottom;
